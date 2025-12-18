@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+   <nav class="navbar">
+  <div class="nav-container">
+    <a class="logo" href="index.html">Second Foundation AI</a>
+    
+   <button type="button" class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a class="neuranet-link" href="neuranet.html">Neuranet</a></li>
+      <li><a href="tools.html">Tools</a></li>
+    </ul>
+    
+    <a class="button-header" href="contact.html">Contact Us</a>
+  </div>
+</nav>
+
+  <section class="case-study-hero">
+    <div class="case-study-hero-content">
+      <h1 class="case-study-hero-title">RCSA Unifies Financial Operations with Custom Cloud Platform</h1>
+    </div>
+  </section>
+
+  <section class="case-study-content-section">
+    <div class="case-study-container">
+      <div class="case-study-image-large">
+        <img src="images/RCSA.jpg" alt="RCSA Case Study" />
+      </div>
+
+      <div class="case-study-text">
+        <h2 class="case-study-heading">Challenge</h2>
+        <p class="case-study-paragraph">RCSA (Red de Colegios Semper Altius), a global network of bilingual Catholic schools across 19 countries, faced mounting complexity in financial management:</p>
+        <ul class="case-study-list">
+          <li>Fragmented systems across dozens of institutions</li>
+          <li>Duplicated records and manual workflows</li>
+          <li>Delays in budget approvals and decision-making</li>
+          <li>Limited visibility into real-time financial data</li>
+        </ul>
+        <p class="case-study-paragraph">The finance team needed a centralized, automated solution that could scale across the network and align with RCSA's internal processes.</p>
+
+        <h2 class="case-study-heading">Solution</h2>
+        <p class="case-study-paragraph">RCSA partnered with Ensitech to co-develop a cloud-based Financial Management Platform (FMP) using Microsoft Azure and Power Platform tools. Key components included:</p>
+        <ul class="case-study-list">
+          <li>Data integration via Azure Data Factory and Logic Apps</li>
+          <li>Centralized data model in Azure SQL Server for reporting and APIs</li>
+          <li>Interactive app for budgeting, forecasting, MPY, and CAPEX</li>
+          <li>Automated approval workflows to eliminate bottlenecks</li>
+          <li>Real-time dashboards powered by Power BI</li>
+          <li>Role-based access control using Azure Security Groups</li>
+        </ul>
+        <p class="case-study-paragraph">The platform was designed collaboratively, with deep alignment to RCSA's operational structure and school network dynamics.</p>
+
+        <h2 class="case-study-heading">Results</h2>
+        <ul class="case-study-list">
+          <li>Enabled faster, more strategic decision-making with real-time data</li>
+          <li>Reduced manual errors and duplicated records through automation</li>
+          <li>Improved operational efficiency across finance, HR, IT, and leadership</li>
+          <li>Strengthened transparency and control with robust reporting tools</li>
+          <li>Achieved high user adoption—even among initially hesitant teams</li>
+          <li>Sparked demand for additional modules before they were announced</li>
+        </ul>
+      </div>
+
+      <div class="case-study-back-link">
+        <a href="index.html#case-studies" class="button-back">← Back to Case Studies</a>
+      </div>
+    </div>
+  </section>
+
+     <footer class="footer">
+      <div class="footer-container">
+        <h2 class="footer-title">Ready to Transform Your Business?</h2>
+        <nav class="footer-nav">
+          <a href="about.html" class="footer-link">About</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="tos.html" class="footer-link">Terms of Service</a>
+          <a href="contact.html" class="footer-button">Contact Us</a>
+        </nav>
+      </div>
+    </footer>
+
+    <button class="floating-schedule-button" id="floatingButton">
+      Schedule Your 15 Minute Meeting
+    </button>
+    
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script src="floating-button.js"></script>
+    
+    <script>
+      (function() {
+        const script = document.createElement('script');
+        script.src = 'https://assistloop.ai/assistloop-widget.js';
+        script.onload = function() {
+          AssistLoopWidget.init({
+            agentId: "e9303ec1-8398-43fd-8018-aefb8d9e106f" 
+          });
+        };
+        document.head.appendChild(script);
+      })();
+    </script>
+
+    <script>
+function toggleMenu() {
+  var navLinks = document.getElementById('navLinks');
+  var hamburger = document.querySelector('.hamburger');
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('active');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Audit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+  <div class="nav-container">
+    <a class="logo" href="index.html">Second Foundation AI</a>
+    
+   <button type="button" class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a class="neuranet-link" href="neuranet.html">Neuranet</a></li>
+      <li><a href="tools.html">Tools</a></li>
+    </ul>
+    
+    <a class="button-header" href="contact.html">Contact Us</a>
+  </div>
+</nav>
+
+  <section class="service-detail-hero">
+    <div class="service-detail-hero-container">
+      <div class="service-detail-hero-image">
+        <img src="images/Audit.jpg" alt="AI Audit" />
+      </div>
+      <div class="service-detail-hero-content">
+        <h1 class="service-detail-hero-title">AI Audit</h1>
+        <p class="service-detail-hero-description">A focused, two-hour workshop designed to evaluate your organization's AI maturity, explore high-value use cases, and provide a preliminary roadmap for AI adoption, without requiring extensive preparation or internal resources.</p>
+        <button class="service-detail-cta-button">Book Your Audit</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-detail-deliverables">
+    <div class="service-detail-deliverables-container">
+      <h2 class="service-detail-section-title">Deliverables</h2>
+
+      <div class="deliverable-item">
+        <div class="deliverable-number">1</div>
+        <div class="deliverable-content">
+          <h3 class="deliverable-title">Pre-Session Discovery Questionnaire</h3>
+          <p class="deliverable-description">Before the call, the client receives a short readiness form to complete (10 - 15 questions). This gathers context on:</p>
+          <ul class="deliverable-list">
+            <li>Business priorities and digital transformation goals</li>
+            <li>Current data and system infrastructure</li>
+            <li>Organizational skill levels and team capabilities</li>
+            <li>Existing AI or automation efforts</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="deliverable-item">
+        <div class="deliverable-number">2</div>
+        <div class="deliverable-content">
+          <h3 class="deliverable-title">Two-Hour Live AI Audit Call</h3>
+          <p class="deliverable-description">Led by a Second Foundation AI data scientist, this structured discussion covers:</p>
+          <div class="deliverable-subsection">
+            <h4 class="deliverable-subtitle">Hour 1: Readiness Review</h4>
+            <ul class="deliverable-list">
+              <li>Assess data environment, technology stack, and processes</li>
+              <li>Discuss current pain points and business challenges</li>
+              <li>Score organizational readiness using Second Foundation AI's maturity model</li>
+            </ul>
+          </div>
+          <div class="deliverable-subsection">
+            <h4 class="deliverable-subtitle">Hour 2: Opportunity Identification</h4>
+            <ul class="deliverable-list">
+              <li>Brainstorm potential AI applications tied to business outcomes</li>
+              <li>Prioritize 2 - 3 initiatives by impact vs. feasibility</li>
+              <li>Identify next steps for proof-of-concept or pilot projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="deliverable-item">
+        <div class="deliverable-number">3</div>
+        <div class="deliverable-content">
+          <h3 class="deliverable-title">Post-Session Summary Report</h3>
+          <p class="deliverable-description">Within 3 - 5 business days, the client receives a concise deliverables package including:</p>
+          <ul class="deliverable-list">
+            <li>AI Readiness Snapshot: Numeric score with supporting commentary</li>
+            <li>Top 3 AI Opportunities: Description, potential business impact, estimated complexity</li>
+            <li>Preliminary Roadmap: 90-day action plan and next steps for pilot exploration</li>
+            <li>Recommended Implementation Partners: Introductions to vetted AI solution providers (optional)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="deliverable-item">
+        <div class="deliverable-number">4</div>
+        <div class="deliverable-content">
+          <h3 class="deliverable-title">Follow-Up Consultation</h3>
+          <p class="deliverable-description">A 30-minute follow-up call with the data scientist or strategy consultant to:</p>
+          <ul class="deliverable-list">
+            <li>Review the summary</li>
+            <li>Refine use case selection</li>
+            <li>Discuss partnership or project scoping options</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-detail-cta-section">
+    <div class="service-detail-cta-container">
+      <h2 class="service-detail-cta-title">Ready to Get Started?</h2>
+      <p class="service-detail-cta-text">Schedule your AI Audit to evaluate your organization's readiness and identify high-impact opportunities.</p>
+      <button class="service-detail-cta-button">Book Your Audit</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <h2 class="footer-title">Ready to Transform Your Business?</h2>
+      <nav class="footer-nav">
+        <a href="about.html" class="footer-link">About</a>
+        <a href="services.html" class="footer-link">Services</a>
+        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        <a href="tos.html" class="footer-link">Terms of Service</a>
+        <a href="contact.html" class="footer-button">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+
+
+    <button class="floating-schedule-button" id="floatingButton">
+      Schedule Your 15 Minute Meeting
+    </button>
+    
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script src="floating-button.js"></script>
+    
+    <script>
+      (function() {
+        const script = document.createElement('script');
+        script.src = 'https://assistloop.ai/assistloop-widget.js';
+        script.onload = function() {
+          AssistLoopWidget.init({
+            agentId: "e9303ec1-8398-43fd-8018-aefb8d9e106f" 
+          });
+        };
+        document.head.appendChild(script);
+      })();
+    </script>
+
+    <script>
+function toggleMenu() {
+  var navLinks = document.getElementById('navLinks');
+  var hamburger = document.querySelector('.hamburger');
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('active');
+}
+</script>
+</body>
+</html>

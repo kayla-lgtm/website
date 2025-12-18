@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Strategy Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+  <div class="nav-container">
+    <a class="logo" href="index.html">Second Foundation AI</a>
+    
+   <button type="button" class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a class="neuranet-link" href="neuranet.html">Neuranet</a></li>
+      <li><a href="tools.html">Tools</a></li>
+    </ul>
+    
+    <a class="button-header" href="contact.html">Contact Us</a>
+  </div>
+</nav>
+
+  <section class="product-hero">
+    <div class="product-hero-container">
+      <div class="product-hero-image">
+        <img src="images/Warehousing Main.png" alt="AI Strategy Guide for Warehousing Businesses" />
+      </div>
+      <div class="product-hero-content">
+        <h1 class="product-hero-title">AI Strategy Guide</h1>
+        <p class="product-hero-price">$19.99</p>
+        <p class="product-hero-description">Turn AI from a buzzword into a practical roadmap for your business. This 24-page digital strategy guide walks you step-by-step through planning, prioritizing, and launching AI initiatives that actually support your team and bottom line.</p>
+        <a href="https://secondfoundationai.gumroad.com/l/dzojoh" class="gumroad-button product-buy-button">Buy Now - $19.99</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-description-section">
+    <div class="product-description-container">
+      <p class="product-description-text">Choose from versions tailored to different industries, each built around the same proven framework and adapted to your operational reality.</p>
+    </div>
+  </section>
+
+  <section class="product-features-section">
+    <div class="product-features-container">
+      <h2 class="product-features-title">What's Inside Each Guide</h2>
+      <ul class="product-features-list">
+        <li>AI Objectives – Clear, business-focused goals for using AI in your organization.</li>
+        <li>Current State Assessment – Worksheets and prompts to evaluate your data, systems, and workflows today.</li>
+        <li>Use Case Prioritization Matrix – A simple way to score and rank AI ideas by impact, effort, and risk.</li>
+        <li>Implementation Roadmap – A phased rollout plan so you can start small, learn fast, and scale what works.</li>
+        <li>Resource Planning Guide – Guidance on roles, technology requirements, and budget checkpoints.</li>
+        <li>Success Metrics & KPIs – Recommended metrics to track value and keep stakeholders aligned.</li>
+        <li>The Importance of ROI – How to link AI projects directly to business outcomes and savings.</li>
+        <li>Vendor Evaluation Checklist – Questions to ask and criteria to compare when selecting AI partners or tools.</li>
+        <li>Trust & Safety Standards – Principles to keep AI use responsible, secure, and compliant.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="product-gallery-section">
+    <div class="product-gallery-container">
+      <h2 class="product-gallery-title">Inside the Guide</h2>
+      <div class="product-gallery-grid">
+        <div class="product-gallery-item">
+          <img src="images/Product Image 9.png" alt="Building an AI Ready Team" />
+        </div>
+        <div class="product-gallery-item">
+          <img src="images/Product Image 5.png" alt="Implementation Roadmap" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-format-section">
+    <div class="product-format-container">
+      <h2 class="product-format-title">Format</h2>
+      <ul class="product-format-list">
+        <li>Digital product only, no physical item will be shipped.</li>
+        <li>After purchase, you'll receive a downloadable copy via Gumroad to use and revisit anytime.</li>
+      </ul>
+      <a href="https://secondfoundationai.gumroad.com/l/dzojoh" class="gumroad-button product-buy-button-bottom">Buy Now - $19.99</a>
+    </div>
+  </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <h2 class="footer-title">Ready to Transform Your Business?</h2>
+        <nav class="footer-nav">
+          <a href="about.html" class="footer-link">About</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="tos.html" class="footer-link">Terms of Service</a>
+          <a href="contact.html" class="footer-button">Contact Us</a>
+        </nav>
+      </div>
+    </footer>
+
+
+    <button class="floating-schedule-button" id="floatingButton">
+      Schedule Your 15 Minute Meeting
+    </button>
+    
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script src="floating-button.js"></script>
+    
+    <script>
+      (function() {
+        const script = document.createElement('script');
+        script.src = 'https://assistloop.ai/assistloop-widget.js';
+        script.onload = function() {
+          AssistLoopWidget.init({
+            agentId: "e9303ec1-8398-43fd-8018-aefb8d9e106f" 
+          });
+        };
+        document.head.appendChild(script);
+      })();
+    </script>
+
+    <script>
+function toggleMenu() {
+  var navLinks = document.getElementById('navLinks');
+  var hamburger = document.querySelector('.hamburger');
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('active');
+}
+</script>
+
+  <script src="https://gumroad.com/js/gumroad.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Audit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="logo" href="index.html">Second Foundation AI</a>
+
+            <button type="button" class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a class="neuranet-link" href="neuranet.html">Neuranet</a></li>
+                <li><a href="tools.html">Tools</a></li>
+            </ul>
+
+            <a class="button-header" href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <h2 class="footer-title">Ready to Transform Your Business?</h2>
+            <nav class="footer-nav">
+                <a href="about.html" class="footer-link">About</a>
+                <a href="services.html" class="footer-link">Services</a>
+                <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                <a href="tos.html" class="footer-link">Terms of Service</a>
+                <a href="contact.html" class="footer-button">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+
+
+    <button class="floating-schedule-button" id="floatingButton">
+        Schedule Your 15 Minute Meeting
+    </button>
+
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script src="floating-button.js"></script>
+
+    <script>
+        (function () {
+            const script = document.createElement('script');
+            script.src = 'https://assistloop.ai/assistloop-widget.js';
+            script.onload = function () {
+                AssistLoopWidget.init({
+                    agentId: "e9303ec1-8398-43fd-8018-aefb8d9e106f"
+                });
+            };
+            document.head.appendChild(script);
+        })();
+    </script>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById('navLinks');
+            var hamburger = document.querySelector('.hamburger');
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+    </script>
+
+
+
+</body>
+
+</html>

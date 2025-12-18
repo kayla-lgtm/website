@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+  <div class="nav-container">
+    <a class="logo" href="index.html">Second Foundation AI</a>
+    
+   <button type="button" class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a class="neuranet-link" href="neuranet.html">Neuranet</a></li>
+      <li><a href="tools.html">Tools</a></li>
+    </ul>
+    
+    <a class="button-header" href="contact.html">Contact Us</a>
+  </div>
+</nav>
+
+  <section class="about-hero">
+    <img src="images/Logo Mockup.png" alt="About Us" class="about-hero-image" />
+    <div class="about-hero-overlay"></div>
+    <div class="about-hero-content">
+      <h1 class="about-hero-title">About Us.</h1>
+    </div>
+  </section>
+
+  <section class="about-intro-section">
+    <div class="about-intro-container">
+      <div class="about-intro-image">
+        <img src="images/About Us.jpeg" alt="Second Foundation AI Team" />
+      </div>
+      <div class="about-intro-text">
+        <h2 class="about-intro-title">We Are Second Foundation AI</h2>
+        <p class="about-intro-paragraph">The foundation was established to meet the growing demand for specialized expertise in artificial intelligence. Our founders, leveraging their extensive experience in enterprise environments and technology solutions, possess a deep understanding of the challenges faced by organizations today.</p>
+        <p class="about-intro-paragraph">Second Foundation AI stands as your leading resource for AI expertise. We are here to assist you in evaluating how you can effectively leverage AI to tackle critical business challenges and drive growth.</p>
+        <p class="about-intro-paragraph">In an era characterized by hyper attention surrounding AI and heightened pressure from investors, board members, and leadership, it is imperative to address this fundamental question that is reshaping the business landscape.</p>
+        <p class="about-intro-paragraph">We help you develop a robust AI strategy and build in-house expertise to accelerate business growth. Our knowledge helps you effectively leverage artificial intelligence, creating tailored solutions that align with your goals and promote innovation. Strengthen your competitive edge and prepare your business for success in a changing technological landscape.</p>
+        <p class="about-intro-paragraph">Second Foundation AI helps you rapidly deploy tailored AI solutions that drive measurable business results, combining deep enterprise expertise with strategic guidance to accelerate impact, build internal capability, and strengthen your competitive edge.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-work-section">
+    <div class="about-work-container">
+      <h2 class="about-work-title">How We Work Together</h2>
+      <div class="about-work-grid">
+        <div class="about-work-card">
+          <h3 class="about-work-card-title">Quick Wins</h3>
+          <p class="about-work-card-text">We help you identify your highest priority business initiative and assign the AI driven solution which best fits your needs. You get a low-risk pilot plan with clear ROI potential</p>
+        </div>
+        <div class="about-work-card">
+          <h3 class="about-work-card-title">AI in Action</h3>
+          <p class="about-work-card-text">We build and test a tailored AI solution that predicts, optimizes, and delivers real business value. You get well defined, clearly understood results.</p>
+        </div>
+        <div class="about-work-card">
+          <h3 class="about-work-card-title">Go Beyond</h3>
+          <p class="about-work-card-text">We expand your AI success with production-ready systems and ongoing support. You get lasting improvements and a long-term innovation partner.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-placeholder-section">
+    <div class="about-placeholder-container">
+      <h2 class="about-placeholder-title">We Help Your Pathway To An Intelligent Business</h2>
+      <p class="about-placeholder-text">Be back soon</p>
+    </div>
+  </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <h2 class="footer-title">Ready to Transform Your Business?</h2>
+        <nav class="footer-nav">
+          <a href="about.html" class="footer-link">About</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="tos.html" class="footer-link">Terms of Service</a>
+          <a href="contact.html" class="footer-button">Contact Us</a>
+        </nav>
+      </div>
+    </footer>
+
+
+    <button class="floating-schedule-button" id="floatingButton">
+      Schedule Your 15 Minute Meeting
+    </button>
+    
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script src="floating-button.js"></script>
+
+<script>
+function toggleMenu() {
+  var navLinks = document.getElementById('navLinks');
+  var hamburger = document.querySelector('.hamburger');
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('active');
+}
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
