@@ -2124,23 +2124,6 @@ input[type="radio"]#service6:checked~.services-list .item-6 .service-content {
 
 /* Tablet dsaas2 override - MUST come after max-width: 1024px rule */
 @media (min-width: 1025px) and (max-width: 1400px) {
-  body {
-    background: orange !important; /* OBVIOUS DEBUG - entire page should turn orange */
-  }
-  
-  /* Add obvious text to show tablet is active */
-  .dsaas2-section::before {
-    content: "TABLET MODE ACTIVE" !important;
-    position: fixed !important;
-    top: 10px !important;
-    left: 10px !important;
-    background: red !important;
-    color: white !important;
-    padding: 10px !important;
-    z-index: 999999 !important;
-    font-size: 20px !important;
-  }
-  
   body .dsaas2-section .dsaas2-inner {
     background-image: none !important;
     width: 100% !important;
