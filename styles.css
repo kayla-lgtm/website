@@ -9,8 +9,12 @@
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
+  color: white;
   background: transparent;
- background: linear-gradient(135deg, #defff4, #9be6ff);
+ background: #050b18;
+   background-image: radial-gradient(circle at 20% 25%, rgba(56, 189, 248, 0.18), transparent 55%),
+                    radial-gradient(circle at 80% 30%, rgba(34, 211, 238, 0.14), transparent 60%),
+                    radial-gradient(circle at 50% 90%, rgba(99, 102, 241, 0.10), transparent 55%);
   position: relative;
   overflow-x: hidden;
 }
@@ -947,17 +951,17 @@ html {
   color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
-  margin-bottom: 12px;
+  margin-bottom: 40px;
   margin-left: 0px;
 }
 
 .hero-subtitle {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 300;
   color: #e6eef8;
   margin-top: 0px;
   margin-right: 0px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   margin-left: 0px;
 }
 
@@ -1010,7 +1014,7 @@ background-image: none;
 .help-main-title {
   font-size: 42px;
   font-weight: 600;
-  color: #0f172a;
+  color: #ffffff;
   text-align: center;
   max-width: 1200px;
 }
@@ -1076,7 +1080,7 @@ background-image: none;
 .help-card-title {
   font-size: 24px;
   font-weight: 500;
-  color: #0f172a;
+  color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 6px;
@@ -1086,7 +1090,7 @@ background-image: none;
 .help-card-text {
   font-size: 20px;
   font-weight: 400;
-  color: #475569;
+  color: #ffffff;
 }
 
 /* PROCESS SECTION (HOMEPAGE) */
@@ -1115,9 +1119,9 @@ background-image: none;
   text-align: center;
   margin-top: 70px;
   margin-right: 0px;
-  margin-bottom: 60px;
+  margin-bottom: 190px;
   margin-left: 0px;
-  color: #0f172a;
+  color: #ffffff;
 }
 
 .process-inner {
@@ -1152,9 +1156,9 @@ background-image: none;
   width: 680px;
   height: 520px;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle at 35% 35%, rgba(0, 220, 200, 0.20), transparent 65%),
-              radial-gradient(circle at 70% 65%, rgba(0, 180, 255, 0.18), transparent 68%);
-  filter: blur(22px);
+  background: radial-gradient(circle at 35% 35%, rgba(0, 220, 202, 0.033), transparent 65%),
+              radial-gradient(circle at 70% 65%, rgba(0, 179, 255, 0.064), transparent 68%);
+  filter: blur(32px);
   opacity: 1;
   pointer-events: none;
   border-radius: 50%;
@@ -1295,7 +1299,7 @@ background-image: none;
   padding-left: 0px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: rgba(15, 23, 42, 0.5);
+  border-bottom-color: #627ec180;
 }
 
 .process-row {
@@ -1305,12 +1309,13 @@ background-image: none;
   cursor: pointer;
   position: relative;
   padding-right: 40px;
+  color: rgb(215, 225, 255);
 }
 
 .process-label {
   font-size: 24px;
   font-weight: 600;
-  color: #0f172a;
+  color: #c6d9ff;
   line-height: 1.3;
 }
 
@@ -1324,7 +1329,7 @@ background-image: none;
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  color: #0f172a;
+  color: #ffffff;
   cursor: pointer;
   font-weight: 300;
 }
@@ -1391,7 +1396,7 @@ input[type="radio"]#process3:checked~.process-list .item-3 .process-toggle-close
 .process-content p {
   font-size: 20px;
   font-weight: 400;
-  color: #475569;
+  color: #ffffff;
   line-height: 1.5;
   margin-top: 0px;
   margin-right: 0px;
@@ -1555,7 +1560,7 @@ input[type="radio"]#service6:checked ~ .services-list .item-6 .service-content {
   padding-left: 0px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: rgba(15, 23, 42, 0.5);
+  border-bottom-color: #627ec180;
 }
 
 .service-row {
@@ -1565,12 +1570,13 @@ input[type="radio"]#service6:checked ~ .services-list .item-6 .service-content {
   cursor: pointer;
   position: relative;
   padding-right: 40px;
+  color: #c6d9ff;
 }
 
 .service-title {
   font-size: 24px;
   font-weight: 600;
-  color: #0f172a;
+  color: #c6d9ff;
   line-height: 1.3;
 }
 
@@ -1584,7 +1590,7 @@ input[type="radio"]#service6:checked ~ .services-list .item-6 .service-content {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  color: #0f172a;
+  color: #ffffff;
   cursor: pointer;
   font-weight: 300;
 }
@@ -1657,7 +1663,7 @@ input[type="radio"]#service6:checked~.services-list .item-6 .service-toggle-clos
 .service-content p {
   font-size: 20px;
   font-weight: 400;
-  color: #475569;
+  color: #ffffff;
   line-height: 1.5;
   margin-top: 0px;
   margin-right: 0px;
@@ -1715,9 +1721,9 @@ input[type="radio"]#service3:checked~.services-list .item-3 .service-content {
   text-align: center;
   margin-top: 0px;
   margin-right: 0px;
-  margin-bottom: 60px;
+  margin-bottom: 160px;
   margin-left: 0px;
-  color: #0f172a;
+  color: #ffffff;
 }
 
 .services-inner {
@@ -2138,8 +2144,7 @@ input[type="radio"]#service6:checked~.services-image .img-6 {
   padding-right: 50px;
   padding-bottom: 180px;
   padding-left: 50px;
-  background-color: #F9FBFC;
-background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, #ECF3F5 100%), linear-gradient(90deg, #00000000 0%, #00000000 52%, #C0E6DC4D 70%, #C0E6DC99 100%), linear-gradient(115deg, #00000000 0%, #00000000 36%, #C0E6DCA6 54%, #C3E4E180 66%, #00000000 82%, #00000000 100%), linear-gradient(90deg, #00000000 0%, #00000000 72%, #E4E9F54D 86%, #E4E9F5B3 100%), radial-gradient(ellipse 980px 740px at 14% 12%, #D8E9EA99 0%, transparent 72%), linear-gradient(180deg, #00000000 0%, #DDEAEE 100%);
+ 
 
 
 
@@ -2156,7 +2161,7 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
 .neuranet-features-title {
   font-size: 40px;
   font-weight: 700;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   margin-top: 0px;
   margin-right: 0px;
@@ -2167,7 +2172,7 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
 .neuranet-features-subtitle {
   font-size: 24px;
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   margin-top: 0px;
   margin-right: auto;
@@ -2378,9 +2383,7 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
   padding-right: 50px;
   padding-bottom: 220px;
   padding-left: 50px;
-  background-color: #F9FBFC;
-  background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, #ECF3F5 100%), linear-gradient(90deg, #00000000 0%, #00000000 52%, #C0E6DC4D 70%, #C0E6DC99 100%), linear-gradient(115deg, #00000000 0%, #00000000 36%, #C0E6DCA6 54%, #C3E4E180 66%, #00000000 82%, #00000000 100%), linear-gradient(90deg, #00000000 0%, #00000000 72%, #E4E9F54D 86%, #E4E9F5B3 100%), radial-gradient(ellipse 980px 740px at 14% 12%, #D8E9EA99 0%, transparent 72%), linear-gradient(180deg, #00000000 0%, #DDEAEE 100%);
-  position: relative;
+ 
   overflow: hidden;
 }
 
@@ -2393,7 +2396,7 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
 .neuranet-process-title {
   font-size: 40px;
   font-weight: 700;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   margin-top: 0px;
   margin-right: 0px;
@@ -2404,7 +2407,7 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
 .neuranet-process-subtitle {
   font-size: 24px;
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   margin-top: 0px;
   margin-right: auto;
@@ -2559,8 +2562,6 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
   padding-right: 50px;
   padding-bottom: 220px;
   padding-left: 50px;
-  background-color: #F9FBFC;
-  background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, #ECF3F5 100%), linear-gradient(90deg, #00000000 0%, #00000000 52%, #C0E6DC4D 70%, #C0E6DC99 100%), linear-gradient(115deg, #00000000 0%, #00000000 36%, #C0E6DCA6 54%, #C3E4E180 66%, #00000000 82%, #00000000 100%), linear-gradient(90deg, #00000000 0%, #00000000 72%, #E4E9F54D 86%, #E4E9F5B3 100%), radial-gradient(ellipse 980px 740px at 14% 12%, #D8E9EA99 0%, transparent 72%), linear-gradient(180deg, #00000000 0%, #DDEAEE 100%);
   position: relative;
   overflow: hidden;
 }
@@ -2576,7 +2577,7 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
 .neuranet-different-title {
   font-size: 40px;
   font-weight: 700;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   margin-top: 0px;
   margin-right: 0px;
@@ -2739,9 +2740,6 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
   padding-right: 50px;
   padding-bottom: 180px;
   padding-left: 50px;
-  background-color: #F9FBFC;
-  background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, #ECF3F5 100%), linear-gradient(90deg, #00000000 0%, #00000000 52%, #C0E6DC4D 70%, #C0E6DC99 100%), linear-gradient(115deg, #00000000 0%, #00000000 36%, #C0E6DCA6 54%, #C3E4E180 66%, #00000000 82%, #00000000 100%), linear-gradient(90deg, #00000000 0%, #00000000 72%, #E4E9F54D 86%, #E4E9F5B3 100%), radial-gradient(ellipse 980px 740px at 14% 12%, #D8E9EA99 0%, transparent 72%), linear-gradient(180deg, #00000000 0%, #DDEAEE 100%);
-  position: relative;
   overflow: hidden;
 }
 
@@ -2754,7 +2752,7 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
 .neuranet-usecases-title {
   font-size: 40px;
   font-weight: 700;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   margin-top: 0px;
   margin-right: 0px;
@@ -2764,16 +2762,17 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
 
 .usecase-row {
   width: 100%;
+  color: white;
   padding-top: 22px;
   padding-right: 0px;
   padding-bottom: 22px;
   padding-left: 0px;
   border-style: solid;
   border-width: 0px;
-  border-color: #00000000;
+  border-color: #54545400;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #0000001A;
+  border-bottom-color: #cbcbcb1a;
 }
 
 .usecase-row-last {
@@ -2785,7 +2784,7 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
 .usecase-button {
   width: 100%;
   text-align: left;
-  background-color: #00000000;
+  background-color: #ffffff00;
   border-style: solid;
   border-width: 0px;
   border-color: #00000000;
@@ -2795,7 +2794,7 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
   padding-left: 0px;
   font-size: 20px;
   font-weight: 700;
-  color: #000000;
+  color: #ffffff;
   cursor: pointer;
   display: block;
 }
@@ -2815,7 +2814,7 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
 .usecase-panel-text {
   font-size: 16px;
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   line-height: 1.6;
   margin-top: 0px;
   margin-right: 0px;
@@ -2827,8 +2826,7 @@ background-image: linear-gradient(135deg, #F9FBFC 0%, #E9F1F4 34%, #EBF1F7 66%, 
 .usecase-row-active .usecase-panel {
   display: block;
 }
-
-91  
+ 
 @media (max-width: 900px) {
   .neuranet-usecases {
     padding-top: 140px;
@@ -3783,9 +3781,9 @@ a:hover {
   text-align: center;
   margin-top: 0px;
   margin-right: 0px;
-  margin-bottom: 80px;
+  margin-bottom: 130px;
   margin-left: 0px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .case-studies-grid {
@@ -3982,7 +3980,7 @@ font-family: Inter, sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.1;
-  color: #0f172a;
+  color: #ffffff;
 }
 
 .services-page-inner {
@@ -4016,7 +4014,7 @@ font-family: Inter, sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 1.2;
-  color: #0f172a;
+  color: #ffffff;
 }
 
 .service-card-description {
@@ -4025,7 +4023,7 @@ font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
-  color: rgba(15, 23, 42, 0.75);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .learn-btn {
@@ -4035,7 +4033,7 @@ font-family: Inter, sans-serif;
   height: 36px;
   padding: 0 18px;
   border-radius: 6px;
-  background: #0b1220;
+  background: #1a6bb0;
   color: #ffffff;
   text-decoration: none;
   font-family: Inter, sans-serif;
@@ -4158,7 +4156,7 @@ img {
   font-size: 40px;
   line-height: 1.05;
   font-weight: 700;
-  color: #0f172a;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -4167,7 +4165,7 @@ img {
   font-size: 18px;
   line-height: 1.6;
   font-weight: 400;
-  color: #475569;
+  color: #ffffff;
   margin: 0;
   max-width: 680px;
 }
@@ -4204,7 +4202,7 @@ img {
   font-family: Inter, sans-serif;
   font-size: 36px;
   font-weight: 800;
-  color: #0f172a;
+  color: #ffffff;
   margin: 0 0 28px 0;
 }
 
@@ -4229,7 +4227,7 @@ img {
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 800;
-  color: #0f172a;
+  color: #f6f9ff;
   background: rgba(15, 23, 42, 0.06);
   flex: 0 0 34px;
   margin-top: 3px;
@@ -4246,7 +4244,7 @@ img {
   font-family: Inter, sans-serif;
   font-size: 20px;
   font-weight: 800;
-  color: #0f172a;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -4254,7 +4252,7 @@ img {
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #475569;
+  color: #ffffff;
   line-height: 1.6;
   margin: 0;
 }
@@ -4267,7 +4265,7 @@ img {
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 800;
-  color: #0f172a;
+  color: #fdfeff;
   margin: 0 0 6px 0;
 }
 
@@ -4280,7 +4278,7 @@ img {
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #475569;
+  color: #ffffff;
   line-height: 1.6;
   margin: 6px 0;
 }
@@ -4603,8 +4601,8 @@ img {
   margin-bottom: 0px;
   margin-left: 0px;
   font-family: Inter, sans-serif;
-  font-size: 52px;
-  font-weight: 800;
+  font-size: 40px;
+  font-weight: 600;
   letter-spacing: -0.02em;
   color: #f8fafc;
 }
@@ -4754,343 +4752,6 @@ img {
   }
 }
 
-/* ABOUT PAGE */
-.about-hero {
-  width: 100%;
-  min-height: 70vh;
-  position: relative;
-  overflow: hidden;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 120px;
-  padding-right: 50px;
-  padding-bottom: 70px;
-  padding-left: 50px;
-}
-
-.about-hero-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.25;
-  filter: blur(0px);
-  transform: scale(1.02);
-}
-
-.about-hero-overlay {
-  position: absolute;
-  inset: 0;
- 
-}
-
-.about-hero-content {
-  width: 100%;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  z-index: 2;
-  padding-top: 70px;
-  padding-right: 60px;
-  padding-bottom: 70px;
-  padding-left: 60px;
-  border-radius: 22px;
- 
-  text-align: center;
-}
-
-.about-hero-title {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: #f8fafc;
-}
-
-.about-intro-section {
-  width: 100%;
-  padding-top: 0px;
-  padding-right: 50px;
-  padding-bottom: 80px;
-  padding-left: 50px;
- 
-}
-
-.about-intro-container {
-  width: 100%;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -35px;
-  display: flex;
-  gap: 60px;
-  align-items: center;
-  padding-top: 55px;
-  padding-right: 60px;
-  padding-bottom: 60px;
-  padding-left: 60px;
-
-}
-
-.about-intro-image {
-  width: 44%;
-  flex-shrink: 0;
-  border-radius: 18px;
-  overflow: hidden;
-
-}
-
-.about-intro-image img {
-  width: 100%;
-  height: 420px;
-  display: block;
-  object-fit: cover;
-}
-
-.about-intro-text {
-  width: 56%;
-}
-
-.about-intro-title {
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 14px;
-  margin-left: 0px;
-  font-family: Inter, sans-serif;
-  font-size: 36px;
-  font-weight: 800;
-  color: #000000;
-}
-
-.about-intro-paragraph {
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 14px;
-  margin-left: 0px;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.7;
-  color: rgba(0, 0, 0, 0.86);
-}
-
-.about-work-section {
-  width: 100%;
-  padding-top: 0px;
-  padding-right: 50px;
-  padding-bottom: 100px;
-  padding-left: 50px;
-
-}
-
-.about-work-container {
-  width: 100%;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 55px;
-  padding-right: 60px;
-  padding-bottom: 60px;
-  padding-left: 60px;
-  border-radius: 22px;
-
-  border-style: solid;
-  border-width: 1px;
-
-}
-
-.about-work-title {
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 26px;
-  margin-left: 0px;
-  font-family: Inter, sans-serif;
-  font-size: 34px;
-  font-weight: 800;
-  color: #000000;
-}
-
-.about-work-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.about-work-card {
-  padding-top: 22px;
-  padding-right: 22px;
-  padding-bottom: 22px;
-  padding-left: 22px;
-  border-radius: 18px;
-}
-
-.about-work-card-title {
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  margin-left: 0px;
-  font-family: Inter, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  color: #000000;
-}
-
-.about-work-card-text {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.7;
-  color: rgba(0, 0, 0, 0.86);
-}
-
-.about-placeholder-section {
-  width: 100%;
-  padding-top: 0px;
-  padding-right: 50px;
-  padding-bottom: 140px;
-  padding-left: 50px;
-
-}
-
-.about-placeholder-container {
-  width: 100%;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 55px;
-  padding-right: 60px;
-  padding-bottom: 60px;
-  padding-left: 60px;
-
-
-
-
-  text-align: center;
-}
-
-.about-placeholder-title {
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  margin-left: 0px;
-  font-family: Inter, sans-serif;
-  font-size: 34px;
-  font-weight: 800;
-  color: #000000;
-}
-
-.about-placeholder-text {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.8);
-}
-
-@media (max-width: 900px) {
-  .about-hero {
-  padding-top: 90px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  min-height: auto;
-}
-
-
-  .about-hero-content {
-  padding-top: 36px;
-  padding-right: 24px;
-  padding-bottom: 36px;
-  padding-left: 24px;
-}
-
-
-  .about-hero-title {
-    font-size: 38px;
-  }
-
-  .about-intro-section {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
- .about-intro-container {
-  margin-top: -16px;
-  flex-direction: column;
-  gap: 22px;
-  padding-top: 34px;
-  padding-right: 24px;
-  padding-bottom: 36px;
-  padding-left: 24px;
-}
-
-
-  .about-intro-image {
-    width: 100%;
-  }
-
-  .about-intro-image img {
-    height: 320px;
-  }
-
-  .about-intro-text {
-    width: 100%;
-  }
-
-  .about-work-section {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  .about-work-container {
-    padding-top: 40px;
-    padding-right: 30px;
-    padding-bottom: 45px;
-    padding-left: 30px;
-  }
-
-  .about-work-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-placeholder-section {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 110px;
-  }
-
-  .about-placeholder-container {
-    padding-top: 40px;
-    padding-right: 30px;
-    padding-bottom: 45px;
-    padding-left: 30px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about-hero-title {
-    font-size: 34px;
-  }
-
-  .about-intro-title {
-    font-size: 30px;
-  }
-
-  .about-placeholder-title {
-    font-size: 30px;
-  }
-
-  .about-intro-image img {
-    height: 260px;
-  }
-}
-
 body.home .process-title {
   margin-bottom: 80px;
 }
@@ -5127,7 +4788,7 @@ body.home .case-study-card-title {
 .comparison-intro {
   font-size: 18px;
   line-height: 1.6;
-  color: #0f172a;
+  color: #ffffff;
   max-width: 1000px;
   margin-bottom: 24px;
 }
@@ -5140,14 +4801,15 @@ body.home .case-study-card-title {
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #ffffff;
+  background-color: #3c4054;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.06);
 }
 
 .comparison-table thead {
-  background-color: #f1f5f9;
+background-color: #52859f;
+;
 }
 
 .comparison-table th {
@@ -5155,7 +4817,7 @@ body.home .case-study-card-title {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #0f172a;
+  color: #ffffff;
   padding-top: 20px;
   padding-right: 18px;
   padding-bottom: 20px;
@@ -5167,7 +4829,7 @@ body.home .case-study-card-title {
 .comparison-table td {
   font-size: 16px;
   line-height: 1.5;
-  color: #0f172a;
+  color: #ffffff;
   padding-top: 22px;
   padding-right: 18px;
   padding-bottom: 22px;
@@ -5182,12 +4844,12 @@ body.home .case-study-card-title {
 
 .feature-cell {
   font-weight: 600;
-  color: #020617;
-  background-color: #f9fbfc;
+  color: #ffffff;
+  background-color: #52859f;
 }
 
 .comparison-table tbody tr:hover td {
-  background-color: #f8fafc;
+  background-color: #52859f;
 }
 
 /* MOBILE / TABLET */
@@ -5249,7 +4911,7 @@ body.home .case-study-card-title {
 .product-hero-title {
   font-size: 44px;
   font-weight: 800;
-  color: #0f172a;
+  color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 10px;
@@ -5259,7 +4921,7 @@ body.home .case-study-card-title {
 .product-hero-price {
   font-size: 22px;
   font-weight: 700;
-  color: #0f172a;
+  color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 18px;
@@ -5269,7 +4931,7 @@ body.home .case-study-card-title {
 .product-hero-description {
   font-size: 18px;
   line-height: 1.6;
-  color: #0f172a;
+  color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 26px;
@@ -5345,7 +5007,7 @@ body.home .case-study-card-title {
 .product-description-text {
   font-size: 18px;
   line-height: 1.65;
-  color: #0f172a;
+  color: #ffffff;
   margin: 0px;
   max-width: 900px;
 }
@@ -5355,7 +5017,7 @@ body.home .case-study-card-title {
 .product-format-title {
   font-size: 34px;
   font-weight: 800;
-  color: #0f172a;
+  color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 26px;
@@ -5375,7 +5037,7 @@ body.home .case-study-card-title {
 .product-format-list li {
   font-size: 18px;
   line-height: 1.65;
-  color: #0f172a;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
@@ -5496,7 +5158,7 @@ body.home .case-study-card-title {
   font-size: 44px;
   font-weight: 800;
   line-height: 1.2;
-  color: #0f172a;
+  color: #ffffff;
   margin: 0px;
 }
 
@@ -5535,7 +5197,7 @@ body.home .case-study-card-title {
 .case-study-heading {
   font-size: 28px;
   font-weight: 700;
-  color: #0f172a;
+  color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 18px;
@@ -5545,7 +5207,7 @@ body.home .case-study-card-title {
 .case-study-paragraph {
   font-size: 18px;
   line-height: 1.65;
-  color: #0f172a;
+  color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 22px;
@@ -5563,7 +5225,7 @@ body.home .case-study-card-title {
 .case-study-list li {
   font-size: 18px;
   line-height: 1.6;
-  color: #0f172a;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -5758,10 +5420,10 @@ body.home .case-study-card-title {
 }
 
 .about-hero-title {
-  font-size: 44px;
-  font-weight: 800;
+  font-size: 40px;
+  font-weight: 600;
   line-height: 1.2;
-  color: #0f172a;
+  color: #ffffff;
   margin: 0px;
 }
 
@@ -5804,7 +5466,7 @@ body.home .case-study-card-title {
   font-size: 32px;
   font-weight: 800;
   line-height: 1.2;
-  color: #0f172a;
+  color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 18px;
@@ -5814,7 +5476,7 @@ body.home .case-study-card-title {
 .about-intro-paragraph {
   font-size: 18px;
   line-height: 1.65;
-  color: #0f172a;
+  color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 18px;
@@ -5839,7 +5501,7 @@ body.home .case-study-card-title {
   font-size: 34px;
   font-weight: 800;
   line-height: 1.2;
-  color: #0f172a;
+  color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 34px;
@@ -5866,7 +5528,7 @@ body.home .case-study-card-title {
 .about-work-card-title {
   font-size: 20px;
   font-weight: 800;
-  color: #0f172a;
+  color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 10px;
@@ -5876,7 +5538,7 @@ body.home .case-study-card-title {
 .about-work-card-text {
   font-size: 16px;
   line-height: 1.65;
-  color: #0f172a;
+  color: #ffffff;
   margin: 0px;
 }
 
@@ -5898,7 +5560,7 @@ body.home .case-study-card-title {
   font-size: 34px;
   font-weight: 800;
   line-height: 1.2;
-  color: #0f172a;
+  color: #ffffff;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 10px;
@@ -5908,7 +5570,7 @@ body.home .case-study-card-title {
 .about-placeholder-text {
   font-size: 18px;
   line-height: 1.65;
-  color: #0f172a;
+  color: #ffffff;
   margin: 0px;
 }
 
@@ -5942,5 +5604,95 @@ body.home .case-study-card-title {
 
   .about-intro-paragraph {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .features-cards {
+    flex-direction: column;
+    gap: 28px;
+    margin: 0px;
+    width: 100%;
+    padding-top: 0px;
+    padding-left: 0px;
+
+    align-items: stretch;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .process-cards {
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+    align-items: stretch;
+    max-width: none;
+
+  .process-card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .different-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+    max-width: none;
+    align-items: stretch;
+  }
+
+  }
+}
+
+@media (max-width: 900px) {
+  .different-cards {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .different-card {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Base state */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  filter: blur(6px);
+  transition: opacity 700ms ease, transform 700ms ease, filter 700ms ease;
+  will-change: opacity, transform, filter;
+}
+
+/* Modern CSS-only scroll reveal (supported in Chromium browsers) */
+@supports (animation-timeline: view()) {
+  .scroll-reveal {
+    transition: none;
+    animation: reveal 1s ease both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+  }
+
+  @keyframes reveal {
+    from { opacity: 0; transform: translateY(18px); filter: blur(6px); }
+    to   { opacity: 1; transform: translateY(0);  filter: blur(0); }
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
   }
 }
