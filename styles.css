@@ -1341,7 +1341,7 @@ background-image: none;
 @media (max-width: 600px) {
   .process-inner {
     flex-direction: column;
-    gap: 30px;
+    gap: px;
   }
 
   .process-list {
@@ -5666,37 +5666,82 @@ background-color: #52859f;
   }
 }
 
-/* Base state */
-.scroll-reveal {
+@media (max-width: 600px) {
+  .process-inner {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .process-list {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .process-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .process-float-icon {
+    width: 58px;
+    height: 58px;
+    font-size: 22px;
+  }
+
+  .process-row {
+    padding-right: 32px;
+  }
+
+  .process-content {
+    padding-top: 12px;
+    padding-bottom: 16px;
+  }
+
+  .process-content p {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .process-label {
+    font-size: 18px;
+  }
+}
+
+.process-inner input[type="radio"],
+.services-inner input[type="radio"] {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 1px;
+  height: 1px;
   opacity: 0;
-  transform: translateY(18px);
-  filter: blur(6px);
-  transition: opacity 700ms ease, transform 700ms ease, filter 700ms ease;
-  will-change: opacity, transform, filter;
+  pointer-events: none;
 }
 
-/* Modern CSS-only scroll reveal (supported in Chromium browsers) */
-@supports (animation-timeline: view()) {
-  .scroll-reveal {
-    transition: none;
-    animation: reveal 1s ease both;
-    animation-timeline: view();
-    animation-range: entry 10% cover 30%;
-  }
-
-  @keyframes reveal {
-    from { opacity: 0; transform: translateY(18px); filter: blur(6px); }
-    to   { opacity: 1; transform: translateY(0);  filter: blur(0); }
-  }
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #ffffff;
 }
 
-/* Respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .scroll-reveal {
-    animation: none !important;
-    transition: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-    filter: none !important;
-  }
+.nav-logo-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.nav-logo-text {
+  white-space: nowrap;
 }
