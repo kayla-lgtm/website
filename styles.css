@@ -601,9 +601,10 @@ html {
   }
 
   .nav-container {
-      padding-right: 0px;
+      padding-right: 10x;
       padding-left: 0px;
       justify-content: right;
+      gap: 20px;
     }
 
   .nav-links {
