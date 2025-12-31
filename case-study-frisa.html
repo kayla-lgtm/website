@@ -9,17 +9,27 @@
 </head>
 
 <body>
-    <nav class="navbar">
+  <nav class="navbar">
   <div class="nav-container">
-    <a class="logo" href="index.html">Second Foundation AI</a>
+    <div class="nav-logo">
+      <img src="images/newlogo.svg" alt="Second Foundation AI Logo" class="nav-logo-icon">
+      <span class="nav-logo-text">Second Foundation AI</span>
+</div>
+
     
-   <button type="button" class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-    </button>
+<button type="button" class="translate-toggle" onclick="toggleTranslate()" aria-label="Language">🌐</button>
+
+<button type="button" class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+</button>
+
+
+
+
     
-        <ul class="nav-links" id="navLinks">
+  <ul class="nav-links" id="navLinks">
 	<li><a href="index.html">Home</a></li>
 	<li><a href="about.html">About Us</a></li>
 	<li><a class="neuranet-link" href="neuranet.html">Neuranet</a></li>
@@ -28,6 +38,10 @@
 </ul>
     
     <a class="button-header" href="contact.html">Contact Us</a>
+
+    <div id="google_translate_element" class="nav-translate"></div>
+
+
   </div>
 </nav>
   
@@ -86,7 +100,7 @@
     </div>
   </section>
   
-      <footer class="footer">
+    <footer class="footer">
       <div class="footer-container">
         <h2 class="footer-title">Ready to Transform Your Business?</h2>
         <nav class="footer-nav">
@@ -96,6 +110,10 @@
           <a href="tos.html" class="footer-link">Terms of Service</a>
           <a href="contact.html" class="footer-button">Contact Us</a>
         </nav>
+        <div class="translate-attribution">
+  Translations provided by Google Translate
+</div>
+
       </div>
     </footer>
 
@@ -121,15 +139,57 @@
       })();
     </script>
 
-    <script>
+<script>
 function toggleMenu() {
   var navLinks = document.getElementById('navLinks');
   var hamburger = document.querySelector('.hamburger');
+  var navContainer = document.querySelector('.nav-container');
+
   navLinks.classList.toggle('active');
   hamburger.classList.toggle('active');
+
+  if (navContainer) {
+    navContainer.classList.toggle('menu-open');
+  }
 }
 </script>
 
-  <script src="script.js"></script>
+
+<script>
+function toggleTranslate() {
+  var wrap = document.getElementById('mobileTranslateWrap');
+  if (!wrap) {
+    return;
+  }
+  wrap.classList.toggle('active');
+}
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+<script src="services-physics.js"></script>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: 'en', autoDisplay: false },
+    'google_translate_element'
+  );
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+function toggleTranslate() {
+  var el = document.getElementById('google_translate_element');
+  if (!el) {
+    return;
+  }
+  el.classList.toggle('active');
+}
+</script>
+
+
 </body>
 </html>
