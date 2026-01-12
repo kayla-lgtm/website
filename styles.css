@@ -5168,6 +5168,7 @@ background-color: #52859f;
 
 .case-study-hero-content {
   max-width: 1100px;
+  color: black;
   margin-left: auto;
   margin-right: auto;
 }
@@ -5215,7 +5216,7 @@ background-color: #52859f;
 .case-study-heading {
   font-size: 28px;
   font-weight: 700;
-  color: #ffffff;
+  color: #000000;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 18px;
@@ -5225,7 +5226,7 @@ background-color: #52859f;
 .case-study-paragraph {
   font-size: 18px;
   line-height: 1.65;
-  color: #ffffff;
+  color: #000000;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 22px;
@@ -5243,7 +5244,7 @@ background-color: #52859f;
 .case-study-list li {
   font-size: 18px;
   line-height: 1.6;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 10px;
 }
 
