@@ -6,6 +6,11 @@
   padding: 0px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -291,7 +296,7 @@ html {
 
   .services-title {
       font-size: 32px;
-      margin-bottom: 40px;
+      margin-bottom: 10px;
     }
 
   .services-inner {
@@ -3941,7 +3946,7 @@ a:hover {
 }
 
 .footer-container {
-  width: min(1200px, 92%);
+  width: 100%;
   margin: 0 auto;
   text-align: left;
 }
@@ -6576,6 +6581,7 @@ background-color: #52859f;
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
+  margin-bottom: 200px;
 }
 
 .neuranet-diagram {
@@ -6614,4 +6620,37 @@ background-color: #52859f;
     display: block;
     border-radius: 0px;
   }
+}
+
+
+.quotecontainer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 40px;
+  max-width: 1100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.quotephotos {
+  flex: 1;
+  border-radius: 37px;
+  border-color: #E4E8FA;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 15px 12.6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.quotebox {
+  display: flex;
+  flex-direction: row;
+}
+
+.quotetextbox {
+  flex: 2;
+  text-align: left;
 }
