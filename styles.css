@@ -6873,3 +6873,7 @@ background-color: #52859f;
   width: 197px;
   height: auto;
 }
+
+.hidden {
+  display: none;
+}
