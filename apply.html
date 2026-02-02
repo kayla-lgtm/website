@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <img src="images/newlogo.svg" alt="Second Foundation AI Logo" class="nav-logo-icon">
+      <span class="nav-logo-text">Second Foundation AI</span>
+</div>
+  
+<button type="button" class="translate-toggle" onclick="toggleTranslate()" aria-label="Language">🌐</button>
+
+<button type="button" class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+</button>
+
+<ul class="nav-links" id="navLinks">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a class="neuranet-link" href="neuranet.html">Neuranet</a></li>
+	<li><a href="dsaas.html">DS360</a></li>
+	<li><a href="services.html">Services</a></li>
+</ul>
+    
+    <a class="button-header" href="contact.html">Contact Us</a>
+
+    <div id="google_translate_element" class="nav-translate"></div>
+</div>
+</nav>
+
+<div class="applyheaderbox">
+    <div class="applyheader">
+        Become a Second Foundation AI Partner
+    </div>
+
+    <div class="applysubheader">
+        Sign up to be a 2FAI partner, and connect business leaders with the AI tools they're hungry for."
+    </div>
+</div>
+    
+
+
+<div class="applycontainerneuranet">
+  <div class="applycontainerneuranettext">
+    <div class="applyheader" style="font-size: 30px;">
+      Starring Neuranet
+    </div>
+
+    <div class="applysubheader" style="font-size: 20px;">
+      Help business leaders find the tools necessary to match their company needs by offering Neuranet; a new, one-of-it's-kind AI intelligence layer. Click here for a more in-depth overview of the Neuranet platform.
+    </div>
+
+  </div>
+
+  <div class="applycontainerneuranetimage">
+    <img src="images/Neuranet Logo.png" alt="Neuranet Logo Image" class="applyneuranetimage" />
+  </div>
+</div>
+
+
+
+<footer class="footer"> 
+      <div class="footerbannercontainer">
+       
+        <div class="footertextcontainer">
+            <div class="footer-title">Become a Second Foundation Partner</div>
+            <p style="color: #000000; font-weight: 600; font-size: 20px;">
+              Apply To Our Partner Program and Start Selling Today!</p>
+            <br>
+            <p style="color: #000000; font-size: 18px;">- Commission-Based Structure on Deals Closed</p>
+            <p style="color: #000000; font-size: 18px;">- Leverage Your Professional Contacts</p>
+            <p style="color: #000000; font-size: 18px;">- Elevate Your Offerings With a Powerful AI Solution</p>
+            <button class="footer-button" onclick="window.location.href='partner.html'">Learn More</button>
+        </div>
+      
+
+        <div class="footerimagecontainer">
+          <img src="images/robot-image.png" alt="Robot Image" class="footer-image" />
+        </div>
+
+      </div>
+      
+
+<nav class="footer-nav">
+  <div class="footerlinkboxcontainer">
+    <div class="footerlinkbox">
+
+      <ul class="footerlist">
+        <li><a href="neuranet.html">Neuranet</a></li>
+        <li><a href="dsaas.html">DS360</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+      </ul>
+
+      <ul class="footerlist">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="tos.html">Terms of Service</a></li>
+      </ul>
+
+      <ul class="footerlist">
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="footer-legal">
+  Translations Provided by Google Translate
+</div>
+
+</div>
+</footer>
+
+    <button class="floating-schedule-button" id="floatingButton">
+      Schedule Your 15 Minute Meeting
+    </button>
+    
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script src="floating-button.js"></script>
+    
+    <script>
+      (function() {
+        const script = document.createElement('script');
+        script.src = 'https://assistloop.ai/assistloop-widget.js';
+        script.onload = function() {
+          AssistLoopWidget.init({
+            agentId: "e9303ec1-8398-43fd-8018-aefb8d9e106f" 
+          });
+        };
+        document.head.appendChild(script);
+      })();
+    </script>
+
+<script>
+function toggleMenu() {
+  var navLinks = document.getElementById('navLinks');
+  var hamburger = document.querySelector('.hamburger');
+  var navContainer = document.querySelector('.nav-container');
+
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('active');
+
+  if (navContainer) {
+    navContainer.classList.toggle('menu-open');
+  }
+}
+</script>
+
+
+<script>
+function toggleTranslate() {
+  var wrap = document.getElementById('mobileTranslateWrap');
+  if (!wrap) {
+    return;
+  }
+  wrap.classList.toggle('active');
+}
+</script>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: 'en', autoDisplay: false },
+    'google_translate_element'
+  );
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
