@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Foundation AI: Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/dropdownmenu.css">
+    <link rel="stylesheet" href="../styles/industrygrid.css">
+    <link rel="stylesheet" href="../styles/effects.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/floatingbutton.css">
+    <link rel="stylesheet" href="../styles/aibot.css">
+</head>
+<body>
+        <div id="navMount"></div>
+
+    <div class="herocontainer">
+        <div class="hero">
+            <div class="textcontainer">
+                <div class="herotext">Operational Intelligence for Modern Enterprises</div>
+                <p class="paragraph">Neuranet connects your data, systems, and teams into one intelligent platform, helping your business run faster, safer, and more strategically.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="neuranet-section">
+        <div class="neuranetcontainer">
+            <div class="neuranetleftcontainer reveal">
+                <div class="headertext">What is Neuranet?</div>
+                <div class="paragraphblack">Neuranet is an enterprise AI ecosystem that integrates directly with your existing systems. It provides real-time insights, automation, and decision support tailored to your most critical workflows. Most organizations have what they need, but can't use it effectively. Neuranet turns scattered information into intelligence your teams can act on immediately.</div>
+            </div>
+
+            <div class="neuranetrightcontainer reveal">
+                <img class="neuranetcontainerlogo" src="../images/NeuranetLogo.png" alt="Neuranet ecosystem diagram">
+            </div>
+        </div>
+    </section>
+
+    <section class="offers-section" aria-labelledby="offers-heading">
+        <div class="offers-inner">
+            <div class="offers-left reveal">
+                <h2 class="headertext" id="offers-heading">What We Offer</h2>
+                <p class="paragraphblack">Designed to work inside your current operations, these capabilities help teams move faster without sacrificing trust, control, or clarity.</p>
+
+                <div class="offers-accordion" id="offersAccordion">
+                    <div class="offer-item">
+                        <button class="offer-trigger paragraphblack" type="button" data-image="../images/NeuranetScreens/IMSIQueryFromNormalUserAccount.png" data-alt="Private, in-house AI models screen" aria-expanded="false">
+                            Private, In-House AI Models
+                        </button>
+                        <p class="offer-content paragraphblack">Deploy private models inside your environment so your sensitive data stays internal while teams still gain enterprise-grade AI performance.</p>
+                    </div>
+
+                    <div class="offer-item">
+                        <button class="offer-trigger paragraphblack" type="button" data-image="../images/NeuranetScreens/QueryforAnalsyis.png" data-alt="Enterprise knowledge lake screen" aria-expanded="false">
+                            Enterprise Knowledge Lake
+                        </button>
+                        <p class="offer-content paragraphblack">Unify documents, systems, and historical records into one searchable source of truth that supports faster, evidence-backed decisions.</p>
+                    </div>
+
+                    <div class="offer-item">
+                        <button class="offer-trigger paragraphblack" type="button" data-image="../images/NeuranetScreens/QueryWithNormaMobileNumber.png" data-alt="Role-based governance screen" aria-expanded="false">
+                            Role-Based Security and Governance
+                        </button>
+                        <p class="offer-content paragraphblack">Apply precise permissions by role so teams only see what they are authorized to access while maintaining full auditability.</p>
+                    </div>
+
+                    <div class="offer-item">
+                        <button class="offer-trigger paragraphblack" type="button" data-image="../images/NeuranetScreens/RootCauseRecommendations.png" data-alt="Verified information reliability screen" aria-expanded="false">
+                            Verified, Trustworthy Information
+                        </button>
+                        <p class="offer-content paragraphblack">Surface responses grounded in validated data and clear provenance so your team can trust outputs in operational workflows.</p>
+                    </div>
+
+                    <div class="offer-item">
+                        <button class="offer-trigger paragraphblack" type="button" data-image="../images/NeuranetScreens/RecommendationsFromPredictiveAnalysis.png" data-alt="AI agents for workflows screen" aria-expanded="false">
+                            AI Agents for Real Workflows
+                        </button>
+                        <p class="offer-content paragraphblack">Launch task-focused agents that automate repetitive operational work, escalate exceptions, and keep humans in control.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offers-right reveal">
+                <div class="offers-image-frame">
+                    <img class="offers-image" id="offersImage" src="../images/NeuranetScreens/IMSIQueryFromNormalUserAccount.png" alt="Private, in-house AI models screen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="industries-section" aria-labelledby="industries-heading">
+        <div class="industries-inner">
+            <h2 class="headertext reveal" id="industries-heading">We Follow Industries, Not Trends</h2>
+            <p class="paragraphblack industries-subtitle reveal">Select an industry to explore focused use cases.</p>
+
+            <div class="industries-stage" id="industriesStage">
+                <div class="industries-grid reveal-stagger" id="industriesGrid"></div>
+
+                <div class="industries-overlay" id="industriesOverlay">
+                    <button class="industries-back" id="industriesBack" type="button" aria-label="Back to all industries">
+                        <span aria-hidden="true">&#8592;</span>
+                    </button>
+                    <div class="industries-overlay-image-wrap">
+                        <img class="industries-overlay-image" id="industriesOverlayImage" src="" alt="">
+                    </div>
+                    <div class="industries-overlay-content">
+                        <h3 class="industries-overlay-title" id="industriesOverlayTitle"></h3>
+                        <ul class="industries-overlay-list" id="industriesOverlayList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ds360-section" aria-labelledby="ds360-heading">
+        <div class="ds360-inner">
+            <div class="ds360-content reveal">
+                <h2 class="ds360-title" id="ds360-heading">Data Science Team On Demand</h2>
+                <p class="ds360-copy">Work with DS360 as an extension of your organization. You get a dedicated data science delivery team focused on measurable outcomes, tight operational alignment, and consistent executive visibility.</p>
+            </div>
+
+            <div class="ds360-visual reveal">
+                <div class="ds360-core">
+                    <img src="../images/DSLogo.png" alt="DS360 operational core">
+                </div>
+                <ul class="ds360-rails" aria-label="DS360 capabilities">
+                    <li class="ds360-rail">Model Training</li>
+                    <li class="ds360-rail">System Integration</li>
+                    <li class="ds360-rail">Dashboards and Alerts</li>
+                    <li class="ds360-rail">Monthly KPI Reviews</li>
+                    <li class="ds360-rail">Iterative Improvements</li>
+                    <li class="ds360-rail">Deployment and Monitoring</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-studies-section" aria-labelledby="case-studies-heading">
+        <div class="case-studies-inner">
+            <div class="case-studies-intro reveal">
+                <h2 class="case-studies-title" id="case-studies-heading">Case Studies</h2>
+                <p class="case-studies-subtitle">Here is what the team has been up to.</p>
+            </div>
+
+            <div class="case-studies-grid reveal-stagger">
+                <a class="case-study-tile" href="../pages/casestudy1.html" aria-label="Read case study: Maswer Automates Unit Management with Custom Control System">
+                    <img class="case-study-image" src="../images/CaseStudies/Maswer.jpg" alt="Maswer case study">
+                    <span class="case-study-label">Maswer Automates Unit Management with Custom Control System</span>
+                </a>
+
+                <a class="case-study-tile" href="../pages/casestudy2.html" aria-label="Read case study: FRISA Uses Deep-Learning to Automate Aerospace Quality Checks">
+                    <img class="case-study-image" src="../images/CaseStudies/FRISA.jpg" alt="FRISA case study">
+                    <span class="case-study-label">FRISA Uses Deep-Learning to Automate Aerospace Quality Checks</span>
+                </a>
+
+                <a class="case-study-tile" href="../pages/casestudy3.html" aria-label="Read case study: RCSA Unifies Financial Operations with Custom Cloud Platform">
+                    <img class="case-study-image" src="../images/CaseStudies/RCSA.jpg" alt="RCSA case study">
+                    <span class="case-study-label">RCSA Unifies Financial Operations with Custom Cloud Platform</span>
+                </a>
+
+                <a class="case-study-tile" href="../pages/casestudy4.html" aria-label="Read case study: Rakuten Transforms Fund Advisory with Neuranet AI">
+                    <img class="case-study-image" src="../images/CaseStudies/Rakuten.jpg" alt="Rakuten case study">
+                    <span class="case-study-label">Rakuten Transforms Fund Advisory with Neuranet AI</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footerMount"></div>
+
+    <script src="../styles/nav.js"></script>
+    <script src="../js/navloader.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/industrygrid.js"></script>
+    <script src="../js/effects.js"></script>
+    <script src="../js/footerloader.js"></script>
+    <script src="../js/floatingbutton.js"></script>
+    <script src="../js/aibot.js"></script>
+</body>
+</html>
+
+
+
