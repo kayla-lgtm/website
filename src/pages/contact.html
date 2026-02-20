@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Foundation AI: Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/floatingbutton.css">
+    <link rel="stylesheet" href="../styles/aibot.css">
+</head>
+<body>
+        <div id="navMount"></div>
+
+    <main class="contact-page">
+        <section class="contact-section" aria-labelledby="contact-title">
+            <div class="contact-inner">
+                <div class="contact-intro">
+                    <h1 class="contact-title" id="contact-title">Lets Work Together</h1>
+                    <p class="contact-copy">We'd love to hear from you and answer any questions you may have. Please fill out the form, and we'll get back to you as soon as possible.</p>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="contact-grid">
+                        <div class="field">
+                            <label class="field-label" for="firstname">First Name</label>
+                            <input class="field-input" id="firstname" name="firstname" type="text" autocomplete="given-name" required>
+                        </div>
+
+                        <div class="field">
+                            <label class="field-label" for="lastname">Last Name</label>
+                            <input class="field-input" id="lastname" name="lastname" type="text" autocomplete="family-name" required>
+                        </div>
+
+                        <div class="field">
+                            <label class="field-label" for="company">Company Name (Optional)</label>
+                            <input class="field-input" id="company" name="company" type="text" autocomplete="organization">
+                        </div>
+
+                        <div class="field">
+                            <label class="field-label" for="email">Email Address</label>
+                            <input class="field-input" id="email" name="email" type="email" autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="field-label" for="message">Message</label>
+                        <textarea class="field-input field-textarea" id="message" name="message" required></textarea>
+                    </div>
+
+                    <div class="contact-actions">
+                        <button class="button-submit" type="submit">Submit</button>
+                        <p class="form-message" id="form-message" aria-live="polite"></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="footerMount"></div>
+
+    <script src="../styles/nav.js"></script>
+    <script src="../js/navloader.js"></script>
+    <script src="../js/contactform.js"></script>
+    <script src="../js/footerloader.js"></script>
+    <script src="../js/floatingbutton.js"></script>
+    <script src="../js/aibot.js"></script>
+</body>
+</html>
+
+
+

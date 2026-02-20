@@ -1,0 +1,49 @@
+.services-page {
+    width: var(--widthfull);
+    min-height: 100vh;
+    background: linear-gradient(165deg, rgba(10, 14, 24, 1) 0%, rgba(17, 14, 24, 1) 54%, rgba(13, 16, 24, 1) 100%);
+}
+
+.services-shell {
+    min-height: 100vh;
+    width: var(--widthfull);
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    text-align: var(--aligncenter);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.services-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizehero);
+    font-weight: var(--weightsemibold);
+    line-height: 1.1;
+    letter-spacing: 0px;
+    color: rgba(246, 249, 255, 0.96);
+}
+
+.services-copy {
+    margin: var(--fortypixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    line-height: 1.6;
+    color: rgba(230, 238, 247, 0.88);
+}
+
+@media (max-width: 900px) {
+    .services-shell {
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .services-title {
+        font-size: var(--textsizepagetitle);
+    }
+
+    .services-copy {
+        font-size: var(--textsizebodyregular);
+    }
+}

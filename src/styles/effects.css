@@ -1,0 +1,227 @@
+.orb-canvas {
+    position: var(--positionabsolute);
+    inset: 0;
+    overflow: var(--hidden);
+    pointer-events: var(--none);
+    z-index: 0;
+}
+
+.orb {
+    position: var(--positionabsolute);
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0;
+    will-change: transform, opacity;
+    animation: orbFloat 18s ease-in-out infinite, orbFadeIn 1.5s ease forwards;
+}
+
+.orb--purple {
+    background: radial-gradient(circle, rgba(170, 94, 122, 0.28) 0%, rgba(170, 94, 122, 0) 70%);
+}
+
+.orb--indigo {
+    background: radial-gradient(circle, rgba(142, 74, 102, 0.24) 0%, rgba(142, 74, 102, 0) 70%);
+}
+
+.orb--blue {
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.30) 0%, rgba(59, 130, 246, 0) 70%);
+}
+
+.orb--warm {
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.20) 0%, rgba(251, 191, 36, 0) 70%);
+}
+
+.orb--rose {
+    background: radial-gradient(circle, rgba(244, 63, 94, 0.20) 0%, rgba(244, 63, 94, 0) 70%);
+}
+
+@keyframes orbFloat {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(30px, -40px) scale(1.05); }
+    50% { transform: translate(-20px, 20px) scale(0.95); }
+    75% { transform: translate(15px, 35px) scale(1.02); }
+}
+
+@keyframes orbFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0.05s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 0.12s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 0.19s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 0.26s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 0.33s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 0.40s; opacity: 1; transform: translateY(0); }
+
+.hero::after {
+    content: "";
+    position: var(--positionabsolute);
+    inset: 0;
+    background:
+        radial-gradient(ellipse 60% 50% at 15% 80%, rgba(170, 94, 122, 0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 60% at 85% 20%, rgba(142, 74, 102, 0.14) 0%, transparent 70%);
+    animation: heroGradientShift 12s ease-in-out infinite alternate;
+    pointer-events: var(--none);
+    z-index: var(--zero);
+}
+
+@keyframes heroGradientShift {
+    0% { opacity: 0.6; transform: scale(1) translate(0, 0); }
+    50% { opacity: 1; transform: scale(1.05) translate(-10px, 5px); }
+    100% { opacity: 0.7; transform: scale(1) translate(5px, -5px); }
+}
+
+.textcontainer {
+    z-index: 2;
+}
+
+.neuranet-section {
+    width: var(--widthfull);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    background: linear-gradient(168deg, #1f2938 0%, #242e41 52%, #342438 100%);
+}
+
+.offers-section {
+    position: var(--positionrelative);
+    background: linear-gradient(168deg, #202b3b 0%, #263143 52%, #38293d 100%) !important;
+}
+
+.industries-section {
+    position: var(--positionrelative);
+    background: linear-gradient(165deg, #edf3fb 0%, #e4edf8 44%, #e6dde8 100%) !important;
+}
+
+.industries-tile {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.industries-tile:hover {
+    transform: translateY(-6px) scale(1.015);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18), 0 4px 12px rgba(0, 0, 0, 0.10), 0 0 0 1px rgba(124, 58, 237, 0.08);
+}
+
+.industries-tile .industries-tile-label {
+    transition: transform 0.3s ease;
+}
+
+.industries-tile:hover .industries-tile-label {
+    transform: translateY(0);
+}
+
+.offer-trigger {
+    transition: color 0.25s ease, padding-left 0.25s ease;
+    border-radius: 4px;
+}
+
+.offer-trigger:hover {
+    color: #d8aec3;
+    padding-left: 8px;
+}
+
+.offer-item.is-active .offer-trigger {
+    color: #d8aec3;
+    font-weight: var(--weightsemibold);
+}
+
+.offers-image-frame {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.offers-image-frame:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(122, 72, 96, 0.12);
+}
+
+.neuranetcontainerlogo {
+    animation: logoFloat 6s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.btn-accent {
+    display: var(--inlineflex);
+    align-items: var(--aligncenter);
+    gap: var(--eightpixels);
+    padding: var(--fourteenpixels) var(--twentyeightpixels);
+    border: var(--none);
+    border-radius: var(--tenpixels);
+    background: linear-gradient(135deg, var(--coloraccentpurple), var(--coloraccentindigo));
+    color: var(--colorwhite);
+    font-family: var(--fontfamily);
+    font-size: var(--sixteenpixels);
+    font-weight: var(--weightsemibold);
+    cursor: var(--pointer);
+    box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-accent:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(124, 58, 237, 0.45), 0 2px 6px rgba(0, 0, 0, 0.10);
+}
+
+.btn-accent:active {
+    transform: translateY(0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: rgba(124, 58, 237, 0.20);
+    color: inherit;
+}
+
+::-moz-selection {
+    background: rgba(124, 58, 237, 0.20);
+    color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .orb,
+    .neuranetcontainerlogo,
+    .hero::after {
+        animation: none !important;
+    }
+
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .reveal-stagger > * {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .industries-tile,
+    .offers-image-frame,
+    .offer-trigger {
+        transition: none !important;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: FRISA | Second Foundation AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/casestudy.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/floatingbutton.css">
+    <link rel="stylesheet" href="../styles/aibot.css">
+</head>
+<body>
+        <div id="navMount"></div>
+
+    <main class="casestudy-page">
+        <section class="casestudy-section">
+            <div class="casestudy-inner">
+                <a class="casestudy-breadcrumb" href="./home.html">&#8592; Back to Home</a>
+
+                <article class="casestudy-hero" aria-labelledby="casestudy-title">
+                    <img class="casestudy-image" src="../images/CaseStudies/FRISA.jpg" alt="FRISA forging quality inspection">
+                    <div class="casestudy-head">
+                        <p class="casestudy-kicker">Case Study</p>
+                        <h1 class="casestudy-title" id="casestudy-title">FRISA Uses Deep Learning to Automate Aerospace Quality Checks</h1>
+                        <p class="casestudy-subtitle">FRISA transformed a manual inspection bottleneck into an AI-assisted quality workflow, increasing consistency and precision for aerospace forging operations.</p>
+                    </div>
+                </article>
+
+                <section class="casestudy-card" aria-label="Case study details">
+                    <div class="casestudy-block">
+                        <h2 class="casestudy-heading">Challenge</h2>
+                        <ul class="casestudy-list">
+                            <li>FRISA manually inspected over 150 complex rings each day at its plant.</li>
+                            <li>The process was labor-intensive and costly.</li>
+                            <li>Inspection outcomes depended on subjective inspector judgment.</li>
+                            <li>Human error and inconsistent classification reduced reliability.</li>
+                            <li>Manual review became a bottleneck for engineering teams and decision-making.</li>
+                            <li>FRISA needed an AI-driven path to automate inspection and classification.</li>
+                        </ul>
+                    </div>
+
+                    <div class="casestudy-block">
+                        <h2 class="casestudy-heading">Solution</h2>
+                        <ul class="casestudy-list">
+                            <li>Ensitech built a custom deep learning system for FRISA quality control.</li>
+                            <li>The team aligned and centered 3D point cloud scans of forged parts.</li>
+                            <li>The system defined machining height, optimal centering zones, and layout classification logic.</li>
+                            <li>A two-stage pipeline was implemented for robustness and accuracy.</li>
+                            <li>Stage 1 used classical optimization and data cleaning for alignment.</li>
+                            <li>Stage 2 used neural networks trained on labeled inspection data for layout.</li>
+                            <li>Development ran on Microsoft Azure with deployment on AWS SageMaker.</li>
+                            <li>Transfer learning with ResNet-34, ResNet-50, Inception, and DenseNet helped reduce false negatives.</li>
+                            <li>Ensitech embedded mathematicians and engineers with FRISA teams for collaborative delivery.</li>
+                        </ul>
+                    </div>
+
+                    <div class="casestudy-block">
+                        <h2 class="casestudy-heading">Results</h2>
+                        <ul class="casestudy-list">
+                            <li>Achieved 95% precision in identifying parts with potential quality issues.</li>
+                            <li>Eliminated false negatives and reduced false positives to 5%.</li>
+                            <li>Cut inspection time significantly, freeing engineering capacity.</li>
+                            <li>Improved accuracy and consistency in plant-level decisions.</li>
+                            <li>Enabled reuse of AI models and insights across other FRISA initiatives.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <div id="footerMount"></div>
+
+    <script src="../styles/nav.js"></script>
+    <script src="../js/navloader.js"></script>
+    <script src="../js/footerloader.js"></script>
+    <script src="../js/floatingbutton.js"></script>
+    <script src="../js/aibot.js"></script>
+</body>
+</html>
+
+
+

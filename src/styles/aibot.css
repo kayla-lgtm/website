@@ -1,0 +1,79 @@
+.aibot-launcher,
+.aibot-native-launcher {
+    --aibot-bg: linear-gradient(150deg, rgba(16, 24, 42, 0.86) 0%, rgba(26, 33, 46, 0.90) 100%);
+    --aibot-border: 1px solid rgba(245, 249, 255, 0.30);
+    --aibot-shadow: 0 14px 30px rgba(7, 18, 39, 0.32);
+    --aibot-shadow-hover: 0 18px 36px rgba(7, 18, 39, 0.40);
+
+    position: var(--positionfixed);
+    right: max(var(--twentypixels), env(safe-area-inset-right));
+    bottom: max(var(--twentypixels), env(safe-area-inset-bottom));
+    z-index: 2147483000;
+    width: 58px;
+    height: 58px;
+    border: var(--aibot-border) !important;
+    border-radius: 999px;
+    background: var(--aibot-bg) !important;
+    color: var(--colorwhite) !important;
+    display: var(--inlineflex);
+    align-items: var(--justifycenter);
+    justify-content: var(--justifycenter);
+    cursor: var(--pointer);
+    box-shadow: var(--aibot-shadow) !important;
+    backdrop-filter: blur(10px) saturate(140%);
+    -webkit-backdrop-filter: blur(10px) saturate(140%);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.aibot-launcher:hover,
+.aibot-native-launcher:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--aibot-shadow-hover);
+    filter: brightness(1.06);
+}
+
+.aibot-launcher:active,
+.aibot-native-launcher:active {
+    transform: translateY(0);
+}
+
+.aibot-launcher:focus-visible,
+.aibot-native-launcher:focus-visible {
+    outline: 3px solid rgba(245, 249, 255, 0.58);
+    outline-offset: 2px;
+}
+
+.aibot-launcher-icon {
+    width: 24px;
+    height: 24px;
+    display: var(--displayinlineblock);
+    line-height: 0;
+}
+
+.aibot-launcher-icon svg {
+    width: var(--widthfull);
+    height: var(--widthfull);
+    display: var(--displayblock);
+}
+
+@media (max-width: 768px) {
+    .aibot-launcher,
+    .aibot-native-launcher {
+        width: 54px;
+        height: 54px;
+        right: max(var(--sixteenpixels), env(safe-area-inset-right));
+        bottom: max(var(--sixteenpixels), env(safe-area-inset-bottom));
+    }
+
+    .aibot-launcher-icon {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .aibot-launcher,
+    .aibot-native-launcher {
+        transition: none;
+    }
+}

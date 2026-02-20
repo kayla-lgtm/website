@@ -1,0 +1,767 @@
+.ds360-page {
+    width: var(--widthfull);
+    background: linear-gradient(165deg, rgba(10, 14, 24, 1) 0%, rgba(17, 14, 24, 1) 54%, rgba(13, 16, 24, 1) 100%);
+}
+
+.ds360-page section + section::before {
+    content: "";
+    position: var(--positionabsolute);
+    left: 50%;
+    top: var(--zero);
+    transform: translateX(-50%);
+    width: min(1080px, calc(100% - 80px));
+    height: var(--onepixel);
+    background: linear-gradient(90deg, rgba(245, 249, 255, 0) 0%, rgba(245, 249, 255, 0.22) 50%, rgba(245, 249, 255, 0) 100%);
+}
+
+.ds360-hero {
+    position: var(--positionrelative);
+    min-height: 100vh;
+    width: var(--widthfull);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    overflow: var(--hidden);
+    padding: 136px var(--fortypixels) 88px;
+}
+
+.ds360-hero-video {
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    width: var(--widthfull);
+    height: var(--widthfull);
+    object-fit: var(--cover);
+    object-position: var(--aligncenter);
+}
+
+.ds360-hero-overlay {
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    background:
+        linear-gradient(180deg, rgba(6, 10, 18, 0.62) 0%, rgba(8, 12, 20, 0.34) 30%, rgba(8, 12, 20, 0.62) 100%),
+        radial-gradient(60% 58% at 50% 50%, rgba(10, 18, 30, 0.14) 0%, rgba(10, 18, 30, 0.52) 100%),
+        linear-gradient(100deg, rgba(8, 14, 24, 0.58) 8%, rgba(8, 14, 24, 0.26) 44%, rgba(8, 14, 24, 0.60) 92%);
+}
+
+.ds360-hero-content {
+    position: var(--positionrelative);
+    z-index: var(--one);
+    width: min(980px, var(--widthfull));
+    margin: var(--marginzeroauto);
+    text-align: var(--aligncenter);
+}
+
+.ds360-hero-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizehero);
+    font-weight: var(--weightsemibold);
+    letter-spacing: 0px;
+    line-height: 1.08;
+    color: rgba(246, 249, 255, 0.98);
+    text-shadow: 0 8px 28px rgba(4, 10, 22, 0.55);
+}
+
+.ds360-hero-subtitle {
+    margin: var(--twentyfourpixels) auto 0 auto;
+    max-width: 48ch;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightmedium);
+    line-height: 1.5;
+    color: rgba(236, 243, 252, 0.94);
+    text-shadow: 0 6px 22px rgba(4, 10, 22, 0.52);
+}
+
+@media (max-width: 900px) {
+    .ds360-page section + section::before {
+        width: min(1080px, calc(100% - 40px));
+    }
+
+    .ds360-hero {
+        padding: 120px var(--twentypixels) 64px;
+        min-height: 88vh;
+    }
+
+    .ds360-hero-title {
+        font-size: var(--textsizehero);
+    }
+
+    .ds360-hero-subtitle {
+        margin-top: var(--sixteenpixels);
+        font-size: var(--textsizebodyregular);
+    }
+}
+
+.ds360-partner {
+    width: var(--widthfull);
+    min-height: 100vh;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.ds360-partner-content {
+    width: min(1040px, var(--widthfull));
+    margin: var(--marginzeroauto);
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    align-items: var(--aligncenter);
+}
+
+.ds360-partner-title {
+    margin: var(--marginzero);
+    margin-bottom: var(--fortypixels);
+    max-width: 40ch;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeheader);
+    font-weight: var(--weightmedium);
+    line-height: 1.22;
+    letter-spacing: 0px;
+    color: rgba(244, 248, 255, 0.95);
+    text-align: var(--aligncenter);
+}
+
+.ds360-partner-image {
+    width: min(620px, var(--widthfull));
+    height: var(--auto);
+    display: var(--displayblock);
+}
+
+@media (max-width: 900px) {
+    .ds360-partner {
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .ds360-partner-title {
+        font-size: var(--textsizesectiontitle);
+        line-height: 1.35;
+    }
+}
+
+.ds360-problems {
+    width: var(--widthfull);
+    min-height: 100vh;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.ds360-problems-shell {
+    width: min(1120px, var(--widthfull));
+    margin: var(--marginzeroauto);
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    align-items: var(--aligncenter);
+}
+
+.ds360-problems-title {
+    margin: var(--marginzero);
+    margin-bottom: var(--fortypixels);
+    max-width: none;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeheader);
+    font-weight: var(--weightmedium);
+    line-height: 1.24;
+    letter-spacing: 0px;
+    color: rgba(244, 248, 255, 0.95);
+    text-align: var(--aligncenter);
+    white-space: var(--whitespacenowrap);
+}
+
+.ds360-problems-layout {
+    width: var(--widthfull);
+    max-width: 980px;
+    margin: var(--marginzeroauto);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    gap: var(--sixtypixels);
+}
+
+.ds360-problems-core {
+    width: min(280px, 34vw);
+    aspect-ratio: 1 / 1;
+    border-radius: 20px;
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.22);
+    background: linear-gradient(156deg, rgba(230, 239, 252, 0.10) 0%, rgba(205, 187, 209, 0.08) 100%);
+    box-shadow: 0 16px 32px rgba(8, 12, 22, 0.24);
+    position: var(--positionrelative);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+}
+
+.ds360-problems-core-ring {
+    width: min(145px, 16vw);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 12px solid rgba(14, 17, 24, 0.90);
+    position: var(--positionrelative);
+}
+
+.ds360-problems-core-dot {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 6px solid rgba(30, 163, 245, 0.90);
+    background: rgba(14, 23, 34, 0.72);
+    position: var(--positionabsolute);
+    left: calc(50% + 44px);
+    top: calc(50% - 62px);
+    box-shadow: 0 0 0 4px rgba(30, 163, 245, 0.18);
+}
+
+.ds360-problems-list {
+    list-style: var(--none);
+    padding: var(--paddingzero);
+    margin: var(--marginzero);
+    width: min(560px, var(--widthfull));
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+}
+
+.ds360-problem-item {
+    position: var(--positionrelative);
+    padding: var(--thirteenpixels) 0;
+    border-bottom: var(--onepixel) solid rgba(244, 248, 255, 0.14);
+}
+
+.ds360-problem-item:first-child {
+    border-top: var(--onepixel) solid rgba(244, 248, 255, 0.14);
+}
+
+.ds360-problem-item-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightsemibold);
+    line-height: 1.32;
+    letter-spacing: 0px;
+    color: rgba(246, 249, 255, 0.95);
+}
+
+.ds360-problem-item-copy {
+    margin: var(--eightpixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizebodyregular);
+    font-weight: var(--weightregular);
+    line-height: 1.56;
+    color: rgba(230, 238, 247, 0.86);
+}
+
+@media (max-width: 900px) {
+    .ds360-problems {
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .ds360-problems-title {
+        font-size: var(--textsizesectiontitle);
+        line-height: 1.32;
+        white-space: normal;
+    }
+
+    .ds360-problems-layout {
+        flex-direction: var(--flexcolumn);
+        gap: var(--twentypixels);
+    }
+
+    .ds360-problems-core {
+        width: min(240px, 62vw);
+    }
+
+    .ds360-problems-core-ring {
+        width: min(124px, 32vw);
+        border-width: 10px;
+    }
+
+    .ds360-problems-core-dot {
+        width: 34px;
+        height: 34px;
+        border-width: 5px;
+        left: calc(50% + 36px);
+        top: calc(50% - 53px);
+    }
+
+    .ds360-problems-list {
+        width: var(--widthfull);
+    }
+
+    .ds360-problem-item {
+        padding: var(--twelvepixels) 0;
+    }
+
+    .ds360-problem-item-title {
+        font-size: var(--textsizeparagraph);
+    }
+
+    .ds360-problem-item-copy {
+        font-size: var(--textsizetiny);
+        line-height: 1.62;
+    }
+}
+
+.ds360-bottlenecks {
+    width: var(--widthfull);
+    min-height: 100vh;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.ds360-bottlenecks-shell {
+    width: min(1120px, var(--widthfull));
+    margin: var(--marginzeroauto);
+}
+
+.ds360-bottlenecks-title {
+    margin: var(--marginzero);
+    margin-bottom: var(--fortypixels);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeheader);
+    font-weight: var(--weightmedium);
+    line-height: 1.24;
+    letter-spacing: 0px;
+    color: rgba(244, 248, 255, 0.95);
+    text-align: var(--aligncenter);
+}
+
+.ds360-bottlenecks-layout {
+    width: var(--widthfull);
+    display: var(--displaygrid);
+    grid-template-columns: minmax(0, var(--oneframe)) minmax(0, var(--oneframe));
+    align-items: var(--aligncenter);
+    gap: var(--sixtypixels);
+}
+
+.ds360-bottlenecks-copy {
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    gap: var(--thirtypixels);
+}
+
+.ds360-bottleneck-item-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightsemibold);
+    line-height: 1.34;
+    letter-spacing: 0px;
+    color: rgba(246, 249, 255, 0.95);
+}
+
+.ds360-bottleneck-item-text {
+    margin: var(--tenpixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizebodyregular);
+    font-weight: var(--weightregular);
+    line-height: 1.58;
+    color: rgba(230, 238, 247, 0.88);
+    max-width: 42ch;
+}
+
+.ds360-bottlenecks-image-wrap {
+    margin: var(--marginzero);
+    width: var(--widthfull);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+}
+
+.ds360-bottlenecks-image {
+    width: min(560px, var(--widthfull));
+    height: var(--auto);
+    display: var(--displayblock);
+}
+
+@media (max-width: 900px) {
+    .ds360-bottlenecks {
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .ds360-bottlenecks-title {
+        font-size: var(--textsizesectiontitle);
+    }
+
+    .ds360-bottlenecks-layout {
+        grid-template-columns: var(--oneframe);
+        gap: var(--thirtypixels);
+    }
+
+    .ds360-bottlenecks-copy {
+        gap: var(--twentypixels);
+    }
+
+    .ds360-bottleneck-item-title {
+        font-size: var(--textsizebodyregular);
+    }
+
+    .ds360-bottleneck-item-text {
+        font-size: var(--textsizetiny);
+        max-width: var(--widthfull);
+    }
+}
+
+.ds360-workflow {
+    width: var(--widthfull);
+    min-height: 100vh;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.ds360-workflow-shell {
+    width: min(1120px, var(--widthfull));
+    margin: var(--marginzeroauto);
+}
+
+.ds360-workflow-title {
+    margin: var(--marginzero);
+    margin-bottom: var(--fortypixels);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeheader);
+    font-weight: var(--weightmedium);
+    line-height: 1.24;
+    letter-spacing: 0px;
+    color: rgba(244, 248, 255, 0.95);
+    text-align: var(--aligncenter);
+}
+
+.ds360-workflow-track {
+    list-style: var(--none);
+    margin: var(--marginzero);
+    padding: var(--paddingzero);
+    display: var(--displaygrid);
+    grid-template-columns: repeat(4, minmax(0, var(--oneframe)));
+    gap: var(--twentypixels);
+    position: var(--positionrelative);
+}
+
+.ds360-workflow-track::before {
+    content: "";
+    position: var(--positionabsolute);
+    left: 8%;
+    right: 8%;
+    top: 40px;
+    height: var(--onepixel);
+    background: linear-gradient(90deg, rgba(244, 248, 255, 0.16) 0%, rgba(244, 248, 255, 0.38) 50%, rgba(244, 248, 255, 0.16) 100%);
+}
+
+.ds360-workflow-step {
+    position: var(--positionrelative);
+    padding: 62px var(--sixteenpixels) var(--sixteenpixels) var(--sixteenpixels);
+    border-radius: var(--sixteenpixels);
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.20);
+    background: linear-gradient(150deg, rgba(226, 236, 250, 0.10) 0%, rgba(206, 188, 211, 0.08) 100%);
+    box-shadow: 0 10px 24px rgba(7, 12, 22, 0.24);
+}
+
+.ds360-workflow-step-index {
+    position: var(--positionabsolute);
+    top: 22px;
+    left: var(--sixteenpixels);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.42);
+    background: rgba(14, 20, 33, 0.78);
+    display: var(--inlineflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizetiny);
+    font-weight: var(--weightsemibold);
+    line-height: 1;
+    color: rgba(244, 248, 255, 0.92);
+    z-index: var(--one);
+}
+
+.ds360-workflow-step-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightsemibold);
+    line-height: 1.34;
+    letter-spacing: 0px;
+    color: rgba(246, 249, 255, 0.95);
+}
+
+.ds360-workflow-step-copy {
+    margin: var(--tenpixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizebodyregular);
+    font-weight: var(--weightregular);
+    line-height: 1.56;
+    color: rgba(230, 238, 247, 0.88);
+}
+
+@media (max-width: 900px) {
+    .ds360-workflow {
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .ds360-workflow-title {
+        font-size: var(--textsizesectiontitle);
+    }
+
+    .ds360-workflow-track {
+        grid-template-columns: var(--oneframe);
+        gap: var(--sixteenpixels);
+    }
+
+    .ds360-workflow-track::before {
+        left: 18px;
+        right: var(--auto);
+        top: 34px;
+        bottom: 18px;
+        width: var(--onepixel);
+        height: var(--auto);
+        background: linear-gradient(180deg, rgba(244, 248, 255, 0.14) 0%, rgba(244, 248, 255, 0.34) 50%, rgba(244, 248, 255, 0.14) 100%);
+    }
+
+    .ds360-workflow-step {
+        padding: 56px var(--fourteenpixels) var(--fourteenpixels) var(--fiftypixels);
+    }
+
+    .ds360-workflow-step-index {
+        left: var(--fourteenpixels);
+        top: 18px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .ds360-workflow-step-title {
+        font-size: var(--textsizebodyregular);
+    }
+
+    .ds360-workflow-step-copy {
+        font-size: var(--textsizetiny);
+        line-height: 1.62;
+    }
+}
+
+.ds360-pricing {
+    width: var(--widthfull);
+    min-height: 100vh;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.ds360-pricing-shell {
+    width: min(1120px, var(--widthfull));
+    margin: var(--marginzeroauto);
+}
+
+.ds360-pricing-title {
+    margin: var(--marginzero);
+    margin-bottom: var(--fortypixels);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeheader);
+    font-weight: var(--weightmedium);
+    line-height: 1.24;
+    letter-spacing: 0px;
+    color: rgba(244, 248, 255, 0.95);
+    text-align: var(--aligncenter);
+}
+
+.ds360-pricing-layout {
+    width: var(--widthfull);
+    display: var(--displaygrid);
+    grid-template-columns: minmax(0, var(--oneframe)) minmax(0, var(--oneframe));
+    gap: var(--sixtypixels);
+    align-items: var(--aligncenter);
+}
+
+.ds360-pricing-copy {
+    width: var(--widthfull);
+}
+
+.ds360-pricing-label {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    line-height: 1.5;
+    color: rgba(228, 236, 248, 0.9);
+}
+
+.ds360-pricing-model {
+    margin: var(--twelvepixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizesectiontitle);
+    font-weight: var(--weightsemibold);
+    line-height: 1.34;
+    color: rgba(246, 249, 255, 0.95);
+}
+
+.ds360-pricing-note {
+    margin: var(--eightpixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizetiny);
+    font-weight: var(--weightregular);
+    line-height: 1.5;
+    color: rgba(220, 231, 245, 0.84);
+}
+
+.ds360-pricing-subtitle {
+    margin: var(--fortypixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightsemibold);
+    line-height: 1.34;
+    color: rgba(246, 249, 255, 0.95);
+}
+
+.ds360-pricing-table {
+    margin-top: var(--twentypixels);
+    width: min(420px, var(--widthfull));
+    border-top: var(--onepixel) solid rgba(244, 248, 255, 0.18);
+    border-bottom: var(--onepixel) solid rgba(244, 248, 255, 0.18);
+}
+
+.ds360-pricing-row {
+    display: var(--displaygrid);
+    grid-template-columns: var(--oneframe) var(--oneframe);
+    border-top: var(--onepixel) solid rgba(244, 248, 255, 0.12);
+}
+
+.ds360-pricing-row:first-child {
+    border-top: var(--none);
+}
+
+.ds360-pricing-cell {
+    padding: var(--sixteenpixels) var(--fourteenpixels);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizebodyregular);
+    line-height: 1.4;
+    color: rgba(232, 239, 248, 0.9);
+}
+
+.ds360-pricing-row .ds360-pricing-cell:first-child {
+    border-right: var(--onepixel) solid rgba(244, 248, 255, 0.14);
+}
+
+.ds360-pricing-row-head .ds360-pricing-cell {
+    font-weight: var(--weightsemibold);
+    color: rgba(246, 249, 255, 0.95);
+}
+
+.ds360-pricing-summary {
+    margin: var(--fortypixels) 0 0 0;
+    max-width: 36ch;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    line-height: 1.5;
+    color: rgba(230, 238, 247, 0.88);
+}
+
+.ds360-pricing-card {
+    border-radius: var(--twentypixels);
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.24);
+    background: linear-gradient(150deg, rgba(226, 236, 250, 0.12) 0%, rgba(207, 189, 212, 0.08) 100%);
+    box-shadow: 0 14px 34px rgba(7, 12, 22, 0.3);
+    padding: 32px 30px;
+}
+
+.ds360-pricing-card-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeheader);
+    font-weight: var(--weightsemibold);
+    line-height: 1.24;
+    color: rgba(246, 249, 255, 0.95);
+    text-align: var(--aligncenter);
+}
+
+.ds360-pricing-card-block {
+    margin-top: var(--thirtypixels);
+    text-align: var(--aligncenter);
+}
+
+.ds360-pricing-card-label {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightsemibold);
+    line-height: 1.4;
+    color: rgba(246, 249, 255, 0.95);
+}
+
+.ds360-pricing-card-value {
+    margin: var(--tenpixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizebodyregular);
+    font-weight: var(--weightregular);
+    line-height: 1.5;
+    color: rgba(230, 238, 247, 0.88);
+}
+
+@media (max-width: 900px) {
+    .ds360-pricing {
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .ds360-pricing-title {
+        font-size: var(--textsizesectiontitle);
+    }
+
+    .ds360-pricing-layout {
+        grid-template-columns: var(--oneframe);
+        gap: var(--thirtypixels);
+    }
+
+    .ds360-pricing-model {
+        font-size: var(--textsizeparagraph);
+    }
+
+    .ds360-pricing-subtitle {
+        font-size: var(--textsizebodyregular);
+    }
+
+    .ds360-pricing-cell {
+        font-size: var(--textsizetiny);
+        padding: var(--thirteenpixels) var(--tenpixels);
+    }
+
+    .ds360-pricing-summary {
+        font-size: var(--textsizebodyregular);
+        max-width: var(--widthfull);
+    }
+
+    .ds360-pricing-card {
+        padding: var(--twentyfourpixels) var(--twentypixels);
+    }
+
+    .ds360-pricing-card-title {
+        font-size: var(--textsizesectiontitle);
+    }
+
+    .ds360-pricing-card-block {
+        margin-top: var(--twentypixels);
+    }
+
+    .ds360-pricing-card-label {
+        font-size: var(--textsizebodyregular);
+    }
+
+    .ds360-pricing-card-value {
+        font-size: var(--textsizetiny);
+    }
+}

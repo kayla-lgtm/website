@@ -1,0 +1,297 @@
+.about-page {
+    width: var(--widthfull);
+    background: linear-gradient(166deg, #1e2635 0%, #263246 52%, #342939 100%);
+    min-height: 100vh;
+}
+
+.about-team-section {
+    width: var(--widthfull);
+    min-height: 92vh;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    position: var(--positionrelative);
+    overflow: visible;
+    padding: 140px var(--eightypixels) 120px var(--eightypixels);
+}
+
+.about-team-section::before {
+    content: "";
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    background:
+        radial-gradient(46% 36% at 12% 18%, rgba(152, 91, 118, 0.20) 0%, rgba(152, 91, 118, 0) 72%),
+        radial-gradient(40% 34% at 88% 82%, rgba(72, 110, 156, 0.18) 0%, rgba(72, 110, 156, 0) 74%);
+    pointer-events: var(--none);
+    z-index: 0;
+}
+
+.about-team-inner {
+    width: var(--widthfull);
+    max-width: 1240px;
+    margin: var(--marginzeroauto);
+    position: var(--positionrelative);
+    z-index: var(--one);;
+}
+
+.about-team-intro {
+    text-align: var(--aligncenter);
+}
+
+.about-team-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeheader);
+    font-weight: var(--weightsemibold);
+    letter-spacing: 0px;
+    line-height: 1.05;
+    color: rgba(245, 249, 255, 0.96);
+}
+
+.about-team-subtitle {
+    margin: var(--fortypixels) auto 0 auto;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    color: rgba(228, 236, 248, 0.86);
+    max-width: 38ch;
+}
+
+.about-team-grid {
+    display: var(--displaygrid);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--twentypixels);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.about-stage {
+    margin-top: var(--sixtypixels);
+    position: var(--positionrelative);
+    isolation: isolate;
+}
+
+.about-stage.is-open .about-team-grid {
+    opacity: var(--zero);
+    pointer-events: var(--none);
+    position: var(--positionabsolute);
+    inset: var(--zero);
+}
+
+.about-card {
+    cursor: var(--pointer);
+    border-radius: 20px;
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.24);
+    background: linear-gradient(150deg, rgba(228, 238, 252, 0.12) 0%, rgba(213, 194, 213, 0.08) 100%);
+    box-shadow: 0 14px 34px rgba(7, 12, 22, 0.34), 0 0 0 1px rgba(142, 86, 113, 0.14);
+    backdrop-filter: blur(10px) saturate(130%);
+    -webkit-backdrop-filter: blur(10px) saturate(130%);
+    overflow: var(--hidden);
+}
+
+.about-card:focus-visible {
+    outline: 3px solid rgba(34, 66, 116, 0.54);
+    outline-offset: 2px;
+}
+
+.about-card-media {
+    width: var(--widthfull);
+    aspect-ratio: 3 / 4;
+    position: var(--positionrelative);
+    background: rgba(215, 227, 244, 0.20);
+}
+
+.about-card-photo {
+    width: var(--widthfull);
+    height: var(--widthfull);
+    display: var(--displayblock);
+    object-fit: var(--cover);
+    filter: saturate(94%) contrast(98%) brightness(0.92);
+}
+
+.about-card-name {
+    margin: var(--marginzero);
+    padding: var(--sixteenpixels) var(--sixteenpixels) var(--fivepixels) var(--sixteenpixels);
+    font-family: var(--fontfamily);
+    font-size: var(--twentypixels);
+    font-weight: var(--weightsemibold);
+    line-height: 1.2;
+    color: rgba(245, 249, 255, 0.96);
+}
+
+.about-card-role {
+    margin: var(--marginzero);
+    padding: 0 var(--sixteenpixels) 2px var(--sixteenpixels);
+    font-family: var(--fontfamily);
+    font-size: var(--sixteenpixels);
+    font-weight: var(--weightsemibold);
+    line-height: 1.4;
+    color: rgba(236, 243, 252, 0.9);
+}
+
+.about-card-company {
+    margin: var(--marginzero);
+    padding: 0 var(--sixteenpixels) var(--eighteenpixels) var(--sixteenpixels);
+    font-family: var(--fontfamily);
+    font-size: var(--sixteenpixels);
+    font-weight: var(--weightregular);
+    line-height: 1.4;
+    color: rgba(227, 236, 248, 0.82);
+}
+
+.about-overlay {
+    display: var(--displayblock);
+    background:
+        linear-gradient(145deg, rgba(35, 43, 58, 0.78) 0%, rgba(63, 40, 56, 0.72) 100%),
+        radial-gradient(120% 120% at 88% 8%, rgba(150, 86, 117, 0.22) 0%, rgba(150, 86, 117, 0) 64%);
+    border-radius: 22px;
+    border: var(--onepixel) solid rgba(255, 255, 255, 0.20);
+    overflow: var(--hidden);
+    opacity: var(--zero);
+    pointer-events: var(--none);
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    transition: opacity 0.3s ease;
+    box-shadow: 0 26px 62px rgba(8, 10, 16, 0.46), 0 0 0 1px rgba(146, 88, 116, 0.22);
+    backdrop-filter: blur(22px) saturate(160%);
+    -webkit-backdrop-filter: blur(22px) saturate(160%);
+}
+
+.about-stage.is-open .about-overlay {
+    position: var(--positionrelative);
+    opacity: var(--one);
+    pointer-events: var(--auto);
+}
+
+.about-overlay-image-wrap {
+    position: var(--positionabsolute);
+    top: 24px;
+    right: 24px;
+    width: 148px;
+    aspect-ratio: 3 / 4;
+    border-radius: var(--fourteenpixels);
+    overflow: var(--hidden);
+    border: var(--onepixel) solid rgba(245, 249, 255, 0.28);
+    background: rgba(19, 32, 45, 0.64);
+    box-shadow: 0 10px 24px rgba(7, 12, 22, 0.34);
+    z-index: var(--two);
+}
+
+.about-overlay-image {
+    width: var(--widthfull);
+    height: 100%;
+    display: var(--displayblock);
+    object-fit: var(--cover);
+}
+
+.about-overlay-content {
+    padding: 84px 32px 32px 32px;
+    padding-right: 200px;
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    justify-content: var(--justifycenter);
+    overflow: visible;
+    background:
+        linear-gradient(135deg, rgba(42, 50, 66, 0.54) 0%, rgba(66, 43, 60, 0.50) 100%),
+        radial-gradient(120% 100% at 100% 0%, rgba(152, 92, 122, 0.18) 0%, rgba(152, 92, 122, 0) 62%);
+}
+
+.about-overlay-name {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--twentyeightpixels);
+    line-height: 1.14;
+    font-weight: var(--weightsemibold);
+    color: rgba(247, 250, 255, 0.96);
+}
+
+.about-overlay-role {
+    margin: var(--thirteenpixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightsemibold);
+    color: rgba(240, 245, 252, 0.94);
+}
+
+.about-overlay-company {
+    margin: var(--fivepixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    color: rgba(233, 239, 248, 0.9);
+}
+
+.about-overlay-bio {
+    margin: var(--twentypixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--sixteenpixels);
+    font-weight: var(--weightregular);
+    line-height: 1.65;
+    color: rgba(237, 243, 252, 0.92);
+    white-space: pre-line;
+}
+
+.about-overlay-close {
+    position: var(--positionabsolute);
+    top: var(--fourteenpixels);
+    left: var(--fourteenpixels);
+    width: var(--fortytwopixels);
+    height: var(--fortytwopixels);
+    border-radius: 999px;
+    border: var(--onepixel) solid rgba(255, 255, 255, 0.64);
+    background: rgba(123, 72, 98, 0.22);
+    backdrop-filter: blur(14px) saturate(150%);
+    -webkit-backdrop-filter: blur(14px) saturate(150%);
+    color: var(--colorwhite);
+    font-size: 22px;
+    line-height: var(--one);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    cursor: var(--pointer);
+    z-index: var(--two);
+}
+
+.about-overlay-close:hover {
+    background: rgba(123, 72, 98, 0.34);
+}
+
+.about-overlay-close:focus-visible {
+    outline: 3px solid rgba(25, 61, 114, 0.55);
+    outline-offset: 2px;
+}
+
+@media (max-width: 1000px) {
+    .about-team-section {
+        min-height: var(--auto);
+        padding: var(--onehundredpixels) var(--fortypixels) var(--eightypixels) var(--fortypixels);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-team-section {
+        padding: var(--eightypixels) var(--twentypixels);
+    }
+
+    .about-stage {
+        margin-top: var(--fortypixels);
+    }
+
+    .about-card-name {
+        font-size: var(--eighteenpixels);
+    }
+
+    .about-overlay-image-wrap {
+        top: var(--eighteenpixels);
+        right: var(--eighteenpixels);
+        width: var(--ninety-sixpixels);
+        border-radius: var(--tenpixels);
+    }
+
+    .about-overlay-content {
+        padding: 64px 20px 20px 20px;
+        padding-right: 130px;
+    }
+
+    .about-overlay-name {
+        font-size: 26px;
+    }
+}

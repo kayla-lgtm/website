@@ -1,0 +1,146 @@
+:root {
+    --alignleft: left;
+    --alignright: right;
+    --aligncenter: center;
+
+    --backgroundcover: cover;
+    --backgroundtransparent: transparent;
+
+    --borderbox: border-box;
+    --cover: cover;
+
+    --displayflex: flex;
+    --displaygrid: grid;
+    --displayblock: block;
+    --displayinline: inline;
+    --displayinlineblock: inline-block;
+    --inlineflex: inline-flex;
+    --flexcolumn: column;
+    --flexrow: row;
+
+    --justifycenter: center;
+    --justifystart: flex-start;
+    --justifyend: flex-end;
+    --stretch: stretch;
+    --justifybetween: space-between;
+    --justifyaround: space-around;
+
+    --contain: contain;
+    --fit: fit;
+
+    --fontfamily: "Inter", sans-serif;
+
+    --colorwhite: #FFFFFF;
+    --colorblack: #000000;
+    --colorblue: #ffefd0;
+    --coloraccentpurple: #7c3aed;
+    --coloraccentindigo: #4f46e5;
+    --coloraccentblue: #3b82f6;
+    --coloraccentwarm: #fbbf24;
+    --coloraccentrose: #f43f5e;
+
+    --textsizehero: 54px;
+    --textsizeheader: 25px;
+    --textsizeparagraph: 18px;
+    --textsizetiny: 14px;
+    --textsizepagetitle: 32px;
+    --textsizesectiontitle: 22px;
+    --textsizebodyregular: 16px;
+
+    --weightblack: 900;
+    --weightbold: 700;
+    --weightsemibold: 600;
+    --weightmedium: 500;
+    --weightregular: 400;
+    --weightlight: 300;
+    --weightextralight: 200;
+
+    --margincontainer: 50px;
+    --marginzero: 0px;
+    --marginzeroauto:  0 auto;
+
+    --navtransition: opacity 0.2s ease;
+    --navborder: 1px solid rgba(255, 255, 255, 0.35);
+    --navradius: 18px;
+    --navbackground: rgba(245, 249, 255, 0.2);
+    --navshadow: 0 10px 34px rgba(7, 18, 39, 0.22);
+    --navblur: blur(18px) saturate(180%);
+    --navwebkit: blur(18px) saturate(180%);
+    --navlinkbackground: rgba(16, 24, 42, 0.72);
+
+    --paddingzero: 0px;
+    --paddingten: 10px;
+    --paddingtwenty: 20px;
+
+    --positionfixed: fixed;
+    --positionabsolute: absolute;
+    --positionrelative: relative;
+    --hidden: hidden;
+    --visible: visible;
+
+    --widthfull: 100%;
+    --widthninety: 90%;
+    --half: 50%;
+    --quarter: 25%;
+
+    --zeropixels: 0px;
+    --onepixel: 1px;
+    --twopixels: 2px;
+    --fivepixels: 5px;
+    --eightpixels: 8px;
+    --tenpixels: 10px;
+    --twelvepixels: 12px;
+    --thirteenpixels: 13px;
+    --fourteenpixels: 14px;
+    --fifteenpixels: 15px;
+    --sixteenpixels: 16px;
+    --seventeenpixels: 17px;
+    --eighteenpixels: 18px;
+    --nineteenpixels: 19px;
+    --twentypixels: 20px;
+    --twentyonepixels: 21px;
+    --twentytwopixels: 22px;
+    --twentythreepixels: 23px;
+    --twentyfourpixels: 24px;
+    --twentyfivepixels: 25px;
+    --twentysixpixels: 26px;
+    --twentysevenpixels: 27px;
+    --twentyeightpixels: 28px;
+    --twentyninepixels: 29px;
+    --thirtypixels: 30px;
+    --fortypixels: 40px;
+    --fiftypixels: 50px;
+    --sixtypixels: 60px;
+    --seventypixels: 70px;
+    --eightypixels: 80px;
+    --ninetysixpixels: 96px;
+    --onehundredpixels: 100px;
+
+    --onehundred: 100;
+    --onethousand: 1000;
+
+    --pointer: pointer;
+    --none: none;
+    --zero: 0;
+    --auto: auto;
+    --one: 1;
+
+    --whitespacenowrap: nowrap;
+    --wrap: wrap;
+
+    --oneframe: 1fr;
+    --oneframeauto: 1fr auto;
+    --oneframeautoframe: 1fr auto 1fr;
+}
+
+body {
+    font-family: var(--fontfamily);
+    margin: 0;
+    padding: var(--paddingzero);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: var(--borderbox);
+}

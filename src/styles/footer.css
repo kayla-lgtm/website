@@ -1,0 +1,152 @@
+.site-footer {
+    width: var(--widthfull);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    background: linear-gradient(162deg, rgba(28, 35, 49, 0.98) 0%, rgba(35, 43, 60, 0.96) 58%, rgba(42, 34, 48, 0.95) 100%);
+    border-top: var(--onepixel) solid rgba(245, 249, 255, 0.16);
+}
+
+.site-footer::before {
+    content: "";
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    background:
+        radial-gradient(46% 38% at 12% 12%, rgba(151, 91, 118, 0.16) 0%, rgba(151, 91, 118, 0) 72%),
+        radial-gradient(40% 34% at 88% 84%, rgba(74, 108, 150, 0.14) 0%, rgba(74, 108, 150, 0) 74%);
+    pointer-events: var(--none);
+    z-index: 0;
+}
+
+.footer-inner {
+    width: var(--widthfull);
+    max-width: 1240px;
+    margin: var(--marginzeroauto);
+    padding: var(--eightypixels) var(--eightypixels) var(--sixtypixels) var(--eightypixels);
+    display: var(--displaygrid);
+    grid-template-columns: var(--oneframe) auto;
+    gap: var(--sixtypixels);
+    position: var(--positionrelative);
+    z-index: var(--one);
+}
+
+.footer-brand-block {
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    align-items: var(--justifystart);
+    gap: var(--sixteenpixels);
+}
+
+.footer-brand {
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    gap: var(--twelvepixels);
+    text-decoration: var(--none);
+}
+
+.footer-logo {
+    width: 26px;
+    height: 26px;
+    display: var(--displayblock);
+}
+
+.footer-brand-text {
+    font-family: var(--fontfamily);
+    font-size: 24px;
+    font-weight: var(--weightsemibold);
+    color: rgba(245, 249, 255, 0.96);
+    letter-spacing: 0px;
+}
+
+.footer-tagline {
+    margin: var(--marginzero);
+    max-width: 40ch;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    line-height: 1.55;
+    color: rgba(230, 237, 247, 0.84);
+}
+
+.footer-nav {
+    min-width: 260px;
+}
+
+.footer-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--twentypixels);
+    font-weight: var(--weightsemibold);
+    color: rgba(246, 250, 255, 0.94);
+}
+
+.footer-links {
+    list-style: var(--none);
+    margin: var(--twentypixels) 0 0 0;
+    padding: var(--paddingzero);
+    display: var(--displaygrid);
+    gap: var(--twelvepixels);
+}
+
+.footer-link {
+    font-family: var(--fontfamily);
+    font-size: var(--sixteenpixels);
+    font-weight: var(--weightregular);
+    color: rgba(229, 237, 247, 0.86);
+    text-decoration: var(--none);
+    cursor: default;
+}
+
+.footer-meta {
+    border-top: var(--onepixel) solid rgba(245, 249, 255, 0.14);
+    position: var(--positionrelative);
+    z-index: var(--one);
+}
+
+.footer-meta-text {
+    margin: var(--marginzero);
+    width: var(--widthfull);
+    max-width: 1240px;
+    padding: var(--twentypixels) var(--eightypixels) var(--twentypixels) var(--eightypixels);
+    margin-left: var(--auto);
+    margin-right: var(--auto);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizetiny);
+    font-weight: var(--weightregular);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(214, 224, 238, 0.78);
+}
+
+@media (max-width: 900px) {
+    .footer-inner {
+        padding: var(--sixtypixels) var(--fortypixels) var(--fortypixels) var(--fortypixels);
+        grid-template-columns: var(--oneframe);
+        gap: var(--fortypixels);
+    }
+
+    .footer-nav {
+        min-width: var(--zero);
+    }
+
+    .footer-meta-text {
+        padding: var(--twentypixels) var(--fortypixels) var(--twentypixels) var(--fortypixels);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-inner {
+        padding: var(--fiftypixels) var(--twentypixels) var(--thirtypixels) var(--twentypixels);
+    }
+
+    .footer-brand-text {
+        font-size: var(--textsizeparagraph);
+    }
+
+    .footer-tagline {
+        font-size: var(--sixteenpixels);
+    }
+
+    .footer-meta-text {
+        padding: var(--eighteenpixels) var(--twentypixels) var(--eighteenpixels) var(--twentypixels);
+    }
+}

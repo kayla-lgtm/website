@@ -1,0 +1,568 @@
+.neuranet-page {
+    width: var(--widthfull);
+    background:
+        radial-gradient(42% 32% at 50% 18%, rgba(144, 52, 78, 0.28) 0%, rgba(144, 52, 78, 0) 72%),
+        radial-gradient(48% 38% at 14% 86%, rgba(111, 44, 68, 0.20) 0%, rgba(111, 44, 68, 0) 74%),
+        radial-gradient(48% 40% at 88% 14%, rgba(132, 62, 87, 0.18) 0%, rgba(132, 62, 87, 0) 76%),
+        linear-gradient(170deg, rgba(18, 13, 21, 1) 0%, rgba(26, 16, 27, 1) 48%, rgba(20, 14, 25, 1) 100%);
+}
+
+.neuranet-section {
+    min-height: 100vh;
+    width: var(--widthfull);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.neuranet-section + .neuranet-section::before {
+    content: "";
+    position: var(--positionabsolute);
+    left: 50%;
+    top: var(--zero);
+    transform: translateX(-50%);
+    width: min(1080px, calc(100% - 80px));
+    height: var(--onepixel);
+    background: linear-gradient(90deg, rgba(245, 249, 255, 0) 0%, rgba(245, 249, 255, 0.22) 50%, rgba(245, 249, 255, 0) 100%);
+}
+
+.neuranet-shell {
+    width: min(1100px, var(--widthfull));
+    margin: var(--marginzeroauto);
+    position: var(--positionrelative);
+    z-index: var(--one);
+}
+
+.neuranet-hero-section .neuranet-shell {
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    align-items: var(--aligncenter);
+    text-align: var(--aligncenter);
+    gap: var(--thirtypixels);
+}
+
+.neuranet-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: 46px;
+    font-weight: var(--weightmedium);
+    letter-spacing: 0px;
+    line-height: 1.1;
+    color: rgba(246, 249, 255, 0.96);
+}
+
+.neuranet-subtitle {
+    margin: var(--fortypixels) auto 0 auto;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizebodyregular);
+    font-weight: var(--weightregular);
+    line-height: 1.6;
+    color: rgba(232, 239, 248, 0.88);
+}
+
+.neuranet-logo-stage {
+    position: var(--positionrelative);
+    width: min(460px, 74vw);
+    aspect-ratio: 1 / 1;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+}
+
+.neuranet-logo-stage::before {
+    content: "";
+    position: var(--positionabsolute);
+    inset: 6%;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, rgba(168, 74, 104, 0.48) 0%, rgba(145, 56, 84, 0.30) 36%, rgba(116, 42, 68, 0) 76%);
+    filter: blur(30px);
+}
+
+.neuranet-logo-stage::after {
+    content: "";
+    position: var(--positionabsolute);
+    inset: -7%;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, rgba(188, 98, 128, 0.30) 0%, rgba(188, 98, 128, 0.10) 42%, rgba(188, 98, 128, 0) 74%);
+    filter: blur(42px);
+}
+
+.neuranet-logo {
+    width: 88%;
+    height: var(--auto);
+    object-fit: var(--contain);
+    position: var(--positionrelative);
+    z-index: 2;
+    filter: drop-shadow(0 0 26px rgba(178, 88, 118, 0.52)) drop-shadow(0 0 56px rgba(149, 62, 92, 0.34));
+}
+
+.neuranet-content-shell {
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+}
+
+.neuranet-panel {
+    width: min(860px, var(--widthfull));
+    border-radius: 22px;
+    border: var(--onepixel) solid rgba(246, 249, 255, 0.16);
+    background: linear-gradient(155deg, rgba(58, 30, 44, 0.30) 0%, rgba(52, 27, 40, 0.22) 100%);
+    box-shadow: 0 20px 46px rgba(8, 8, 12, 0.34);
+    backdrop-filter: blur(10px) saturate(125%);
+    -webkit-backdrop-filter: blur(10px) saturate(125%);
+    padding: clamp(20px, 2.8vw, 32px);
+}
+
+.neuranet-panel-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: 34px;
+    font-weight: var(--weightmedium);
+    letter-spacing: 0px;
+    line-height: 1.18;
+    color: rgba(246, 249, 255, 0.95);
+}
+
+.neuranet-panel-copy {
+    margin: var(--fortypixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizebodyregular);
+    font-weight: var(--weightregular);
+    line-height: 1.65;
+    color: rgba(229, 237, 247, 0.88);
+}
+
+.neuranet-features-section .neuranet-shell {
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    gap: var(--fortypixels);
+}
+
+.neuranet-features-intro {
+    text-align: var(--aligncenter);
+    max-width: 920px;
+    margin: var(--marginzeroauto);
+}
+
+.neuranet-section-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: 38px;
+    font-weight: var(--weightmedium);
+    letter-spacing: 0px;
+    line-height: 1.15;
+    color: rgba(246, 249, 255, 0.96);
+}
+
+.neuranet-section-subtitle {
+    margin: var(--fortypixels) auto 0 auto;
+    max-width: 70ch;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizebodyregular);
+    font-weight: var(--weightregular);
+    line-height: 1.65;
+    color: rgba(230, 238, 247, 0.88);
+}
+
+.neuranet-features-grid {
+    display: var(--displaygrid);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--twentypixels);
+    margin-top: var(--twelvepixels);
+}
+
+.neuranet-feature-card {
+    border-radius: var(--twentypixels);
+    border: var(--onepixel) solid rgba(246, 249, 255, 0.16);
+    background: linear-gradient(156deg, rgba(65, 32, 48, 0.30) 0%, rgba(52, 25, 38, 0.20) 100%);
+    box-shadow: 0 14px 34px rgba(8, 8, 12, 0.28);
+    backdrop-filter: blur(10px) saturate(125%);
+    -webkit-backdrop-filter: blur(10px) saturate(125%);
+    padding: 24px;
+}
+
+.neuranet-feature-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: var(--inlineflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    font-size: 20px;
+    color: rgba(252, 240, 246, 0.95);
+    background: rgba(168, 74, 104, 0.22);
+    border: 1px solid rgba(246, 224, 234, 0.24);
+    box-shadow: 0 0 28px rgba(173, 74, 105, 0.28);
+}
+
+.neuranet-feature-title {
+    margin: var(--fortypixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--nineteenpixels);
+    font-weight: var(--weightmedium);
+    line-height: 1.3;
+    color: rgba(246, 249, 255, 0.95);
+}
+
+.neuranet-feature-list {
+    margin: var(--thirteenpixels) 0 0 0;
+    padding-left: 18px;
+}
+
+.neuranet-feature-list li {
+    font-family: var(--fontfamily);
+    font-size: var(--fifteenpixels);
+    font-weight: var(--weightregular);
+    line-height: 1.62;
+    color: rgba(230, 238, 247, 0.88);
+}
+
+.neuranet-feature-list li + li {
+    margin-top: var(--fivepixels);
+}
+
+.neuranet-diagram-section .neuranet-shell {
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    gap: var(--fortypixels);
+}
+
+.neuranet-diagram-frame {
+    width: min(1120px, var(--widthfull));
+    margin: var(--marginzeroauto);
+    border-radius: 24px;
+    border: var(--onepixel) solid rgba(246, 249, 255, 0.18);
+    background: linear-gradient(156deg, rgba(65, 32, 48, 0.28) 0%, rgba(52, 25, 38, 0.20) 100%);
+    box-shadow: 0 18px 40px rgba(8, 8, 12, 0.30);
+    backdrop-filter: blur(10px) saturate(125%);
+    -webkit-backdrop-filter: blur(10px) saturate(125%);
+    padding: clamp(10px, 1.6vw, 18px);
+}
+
+.neuranet-diagram-image {
+    width: var(--widthfull);
+    height: var(--auto);
+    display: var(--displayblock);
+    border-radius: var(--sixteenpixels);
+    object-fit: var(--contain);
+}
+
+.neuranet-compare-section .neuranet-shell {
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    gap: var(--fortypixels);
+}
+
+.neuranet-compare-section {
+    min-height: var(--auto);
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.neuranet-compare-flow {
+    width: min(1120px, var(--widthfull));
+    margin: var(--marginzeroauto);
+    position: var(--positionrelative);
+    padding: 0 8px;
+}
+
+.neuranet-compare-flow::before {
+    content: "";
+    position: var(--positionabsolute);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(900px, 90%);
+    height: min(620px, 100%);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(97, 58, 77, 0.26) 0%, rgba(97, 58, 77, 0.14) 36%, rgba(97, 58, 77, 0) 74%);
+    filter: blur(26px);
+    pointer-events: var(--none);
+}
+
+.neuranet-compare-flow::after {
+    content: "";
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    background:
+        linear-gradient(90deg,
+            transparent 0%,
+            transparent calc(34% - 0.5px),
+            rgba(181, 103, 130, 0.34) calc(34% - 0.5px),
+            rgba(181, 103, 130, 0.34) calc(34% + 0.5px),
+            transparent calc(34% + 0.5px),
+            transparent calc(67% - 0.5px),
+            rgba(181, 103, 130, 0.34) calc(67% - 0.5px),
+            rgba(181, 103, 130, 0.34) calc(67% + 0.5px),
+            transparent calc(67% + 0.5px),
+            transparent 100%);
+    pointer-events: var(--none);
+}
+
+.neuranet-compare-row {
+    position: var(--positionrelative);
+    z-index: var(--one);
+    display: var(--displaygrid);
+    grid-template-columns: 34% 33% 33%;
+    padding: 16px 0;
+}
+
+.neuranet-compare-row::before {
+    content: "";
+    position: var(--positionabsolute);
+    left: var(--zero);
+    right: var(--zero);
+    bottom: var(--zero);
+    height: var(--onepixel);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(181, 103, 130, 0.36) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.neuranet-compare-row-head {
+    padding-top: var(--eightpixels);
+    padding-bottom: var(--fourteenpixels);
+}
+
+.neuranet-compare-row-head::before {
+    height: var(--twopixels);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(196, 116, 144, 0.50) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.neuranet-compare-cell {
+    position: var(--positionrelative);
+    font-family: var(--fontfamily);
+    font-size: var(--fifteenpixels);
+    font-weight: var(--weightregular);
+    line-height: 1.52;
+    color: rgba(231, 239, 247, 0.90);
+    text-align: var(--aligncenter);
+    padding: 0 18px;
+}
+
+.neuranet-compare-cell + .neuranet-compare-cell::before {
+    display: var(--none);
+}
+
+.neuranet-compare-row-head .neuranet-compare-cell {
+    font-size: var(--sixteenpixels);
+    font-weight: var(--weightmedium);
+    letter-spacing: 0px;
+    color: rgba(242, 247, 254, 0.96);
+}
+
+.neuranet-compare-row .neuranet-compare-cell:nth-child(2) {
+    font-size: var(--nineteenpixels);
+    font-weight: var(--weightmedium);
+    letter-spacing: 0px;
+}
+
+.neuranet-usecases-section {
+    min-height: var(--auto);
+    padding-top: 96px;
+    padding-bottom: 110px;
+}
+
+.neuranet-usecases-section .neuranet-shell {
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    gap: var(--fortypixels);
+}
+
+.neuranet-usecases-intro {
+    max-width: 820px;
+}
+
+.neuranet-usecases-grid {
+    width: min(1020px, var(--widthfull));
+    margin: var(--marginzeroauto);
+    display: var(--displaygrid);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--twentypixels);
+}
+
+.neuranet-usecase-card {
+    min-height: 210px;
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    justify-content: var(--justifycenter);
+    border-radius: 20px;
+    border: var(--onepixel) solid rgba(246, 249, 255, 0.16);
+    background: linear-gradient(155deg, rgba(62, 34, 48, 0.28) 0%, rgba(48, 26, 38, 0.22) 100%);
+    box-shadow: 0 16px 34px rgba(8, 8, 12, 0.30);
+    backdrop-filter: blur(10px) saturate(125%);
+    -webkit-backdrop-filter: blur(10px) saturate(125%);
+    padding: 24px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.neuranet-usecase-card:hover {
+    border-color: rgba(246, 249, 255, 0.24);
+    box-shadow: 0 18px 38px rgba(8, 8, 12, 0.34);
+}
+
+.neuranet-usecase-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}
+
+.neuranet-usecase-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: 22px;
+    font-weight: var(--weightmedium);
+    letter-spacing: 0px;
+    line-height: 1.22;
+    color: rgba(246, 249, 255, 0.96);
+}
+
+.neuranet-usecase-copy {
+    margin: var(--thirteenpixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--fifteenpixels);
+    font-weight: var(--weightregular);
+    line-height: 1.62;
+    color: rgba(230, 238, 247, 0.88);
+}
+
+@media (max-width: 900px) {
+    .neuranet-section {
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .neuranet-hero-section .neuranet-shell {
+        gap: var(--twentypixels);
+    }
+
+    .neuranet-title {
+        font-size: 36px;
+    }
+
+    .neuranet-subtitle {
+        font-size: var(--fifteenpixels);
+    }
+
+    .neuranet-logo-stage {
+        width: min(420px, 86vw);
+    }
+
+    .neuranet-panel-title {
+        font-size: 30px;
+    }
+
+    .neuranet-panel-copy {
+        font-size: var(--fifteenpixels);
+    }
+
+    .neuranet-section + .neuranet-section::before {
+        width: min(1080px, calc(100% - 40px));
+    }
+
+    .neuranet-features-grid {
+        grid-template-columns: var(--oneframe);
+        gap: var(--sixteenpixels);
+        margin-top: var(--tenpixels);
+    }
+
+    .neuranet-section-title {
+        font-size: 32px;
+    }
+
+    .neuranet-section-subtitle {
+        font-size: var(--fifteenpixels);
+    }
+
+    .neuranet-diagram-section .neuranet-shell {
+        gap: var(--thirtypixels);
+    }
+
+    .neuranet-diagram-frame {
+        border-radius: 18px;
+        padding: 10px;
+    }
+
+    .neuranet-diagram-image {
+        border-radius: 12px;
+    }
+
+    .neuranet-compare-flow {
+        width: min(1120px, var(--widthfull));
+        padding: var(--zero);
+    }
+
+    .neuranet-compare-flow::after {
+        display: var(--none);
+    }
+
+    .neuranet-compare-row {
+        grid-template-columns: var(--oneframe);
+        row-gap: 6px;
+        padding: 14px 0;
+    }
+
+    .neuranet-compare-row-head {
+        display: var(--none);
+    }
+
+    .neuranet-compare-cell {
+        text-align: var(--alignleft);
+        padding: 0 4px;
+        font-size: var(--fourteenpixels);
+    }
+
+    .neuranet-compare-cell + .neuranet-compare-cell::before {
+        display: var(--none);
+    }
+
+    .neuranet-compare-row .neuranet-compare-cell:nth-child(1) {
+        font-size: var(--fifteenpixels);
+        font-weight: var(--weightmedium);
+        color: rgba(242, 247, 254, 0.96);
+    }
+
+    .neuranet-compare-row .neuranet-compare-cell:nth-child(2)::before {
+        content: "Public Models: ";
+        font-weight: var(--weightmedium);
+        color: rgba(230, 238, 247, 0.74);
+    }
+
+    .neuranet-compare-row .neuranet-compare-cell:nth-child(3)::before {
+        content: "Neuranet: ";
+        font-weight: var(--weightmedium);
+        color: rgba(230, 238, 247, 0.82);
+    }
+
+    .neuranet-compare-section {
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
+
+    .neuranet-usecases-section {
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
+
+    .neuranet-usecases-grid {
+        grid-template-columns: var(--oneframe);
+        gap: var(--fourteenpixels);
+    }
+
+    .neuranet-usecase-card {
+        padding: var(--twentypixels);
+        min-height: var(--zero);
+    }
+
+    .neuranet-usecase-card:last-child:nth-child(odd) {
+        grid-column: span 1;
+    }
+
+    .neuranet-usecase-title {
+        font-size: var(--nineteenpixels);
+    }
+
+    .neuranet-usecase-copy {
+        font-size: var(--fourteenpixels);
+    }
+}

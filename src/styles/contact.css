@@ -1,0 +1,178 @@
+.contact-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(48% 36% at 14% 18%, rgba(147, 88, 114, 0.20) 0%, rgba(147, 88, 114, 0) 72%),
+        radial-gradient(42% 34% at 84% 78%, rgba(73, 108, 152, 0.20) 0%, rgba(73, 108, 152, 0) 74%),
+        linear-gradient(160deg, rgba(26, 33, 46, 0.98) 0%, rgba(36, 44, 61, 0.96) 56%, rgba(43, 35, 49, 0.96) 100%);
+    padding: 140px var(--fortypixels) var(--eightypixels);
+}
+
+.contact-section {
+    width: var(--widthfull);
+}
+
+.contact-inner {
+    width: min(1020px, var(--widthfull));
+    margin: var(--marginzeroauto);
+    border-radius: 24px;
+    border: 1px solid rgba(245, 249, 255, 0.22);
+    background: linear-gradient(152deg, rgba(18, 26, 40, 0.90) 0%, rgba(28, 36, 52, 0.86) 100%);
+    box-shadow: 0 28px 60px rgba(7, 12, 21, 0.38);
+    backdrop-filter: blur(16px) saturate(135%);
+    -webkit-backdrop-filter: blur(16px) saturate(135%);
+    padding: clamp(20px, 3.2vw, 30px);
+}
+
+.contact-intro {
+    margin-bottom: var(--twentypixels);
+}
+
+.contact-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizepagetitle);
+    font-weight: var(--weightsemibold);
+    letter-spacing: 0px;
+    line-height: 1.08;
+    color: rgba(245, 249, 255, 0.96);
+}
+
+.contact-copy {
+    margin: var(--fortypixels) 0 0 0;
+    max-width: 64ch;
+    font-family: var(--fontfamily);
+    font-size: var(--sixteenpixels);
+    line-height: 1.6;
+    font-weight: var(--weightregular);
+    color: rgba(228, 238, 248, 0.90);
+}
+
+.contact-form {
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    gap: var(--sixteenpixels);
+}
+
+.contact-grid {
+    display: var(--displaygrid);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--sixteenpixels);
+}
+
+.field {
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    gap: 8px;
+}
+
+.field-label {
+    font-family: var(--fontfamily);
+    font-size: var(--fourteenpixels);
+    font-weight: var(--weightsemibold);
+    color: rgba(245, 249, 255, 0.92);
+}
+
+.field-input {
+    width: var(--widthfull);
+    border-radius: 14px;
+    border: 1px solid rgba(245, 249, 255, 0.22);
+    background: rgba(255, 255, 255, 0.07);
+    color: var(--colorwhite);
+    font-family: var(--fontfamily);
+    font-size: var(--fourteenpixels);
+    font-weight: var(--weightregular);
+    padding: 11px var(--fourteenpixels);
+    min-height: 44px;
+    outline: none;
+}
+
+.field-input::placeholder {
+    color: rgba(226, 236, 248, 0.62);
+}
+
+.field-input:focus-visible {
+    border-color: rgba(198, 220, 248, 0.62);
+    box-shadow: 0 0 0 3px rgba(158, 191, 235, 0.28);
+}
+
+.field-textarea {
+    min-height: 136px;
+    resize: vertical;
+}
+
+.contact-actions {
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    align-items: var(--justifystart);
+    gap: var(--twelvepixels);
+    margin-top: var(--sixteenpixels);
+}
+
+.button-submit {
+    display: var(--inlineflex);
+    align-items: var(--justifycenter);
+    justify-content: var(--justifycenter);
+    min-height: 48px;
+    min-width: 140px;
+    padding: 0 var(--twentypixels);
+    border-radius: 999px;
+    border: 1px solid rgba(245, 249, 255, 0.30);
+    background: linear-gradient(150deg, rgba(16, 24, 42, 0.86) 0%, rgba(26, 33, 46, 0.90) 100%);
+    color: var(--colorwhite);
+    font-family: var(--fontfamily);
+    font-size: var(--fourteenpixels);
+    font-weight: var(--weightsemibold);
+    letter-spacing: 0px;
+    cursor: var(--pointer);
+    box-shadow: 0 14px 30px rgba(7, 18, 39, 0.32);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+}
+
+.button-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 36px rgba(7, 18, 39, 0.40);
+    filter: brightness(1.06);
+}
+
+.button-submit:active {
+    transform: translateY(0);
+}
+
+.button-submit:focus-visible {
+    outline: 3px solid rgba(245, 249, 255, 0.58);
+    outline-offset: 2px;
+}
+
+.button-submit:disabled {
+    opacity: 0.72;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.form-message {
+    margin: var(--zero);
+    min-height: 24px;
+    font-family: var(--fontfamily);
+    font-size: var(--fourteenpixels);
+    font-weight: var(--weightregular);
+    color: rgba(228, 238, 248, 0.9);
+}
+
+.form-message-success {
+    color: #9df0bc;
+}
+
+.form-message-error {
+    color: #ffb2b2;
+}
+
+@media (max-width: 860px) {
+    .contact-page {
+        padding: 120px var(--twentypixels) var(--sixtypixels);
+    }
+
+    .contact-grid {
+        grid-template-columns: var(--oneframe);
+        gap: var(--sixteenpixels);
+    }
+}
