@@ -19,14 +19,14 @@
 }
 
 .offers-left {
-    width: 58%;
+    width: 50%;
     display: var(--displayflex);
     flex-direction: var(--flexcolumn);
     justify-content: var(--justifycenter);
 }
 
 .offers-right {
-    width: 42%;
+    width: 50%;
     display: var(--displayflex);
     align-items: var(--aligncenter);
     justify-content: var(--justifyend);
@@ -78,8 +78,7 @@
 
 .offers-image-frame {
     width: var(--widthfull);
-    max-width: 620px;
-    aspect-ratio: 16 / 10;
+    max-width: 860px;
     background: rgba(17, 23, 34, 0.68);
     border-radius: var(--tenpixels);
     overflow: var(--hidden);
@@ -89,8 +88,8 @@
 
 .offers-image {
     width: var(--widthfull);
-    height: var(--widthfull);
-    object-fit: var(--cover);
+    height: var(--auto);
+    object-fit: var(--contain);
     display: var(--displayblock);
 }
 
@@ -102,7 +101,7 @@
 
     .offers-inner {
         flex-direction: var(--flexcolumn);
-        gap: var(--fortypixels);
+        gap: var(--twentypixels);
         padding: var(--sixtypixels) var(--twentypixels) var(--eightypixels);
         min-height: var(--auto);
     }
@@ -137,8 +136,8 @@
     }
 
     .offer-item .offers-image-frame {
-        width: 86%;
-        max-width: 340px;
+        width: 100%;
+        max-width: 730px;
         margin-top: 24px;
         margin-left: var(--marginzero);
         margin-right: var(--auto);
