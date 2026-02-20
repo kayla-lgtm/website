@@ -268,7 +268,7 @@
 
 @media (max-width: 768px) {
     .about-team-section {
-        padding: var(--eightypixels) var(--twentypixels);
+        padding: 132px var(--twentypixels) var(--eightypixels) var(--twentypixels);
     }
 
     .about-stage {
@@ -279,16 +279,26 @@
         font-size: var(--eighteenpixels);
     }
 
+    .about-stage.is-open .about-team-grid {
+        display: var(--none);
+    }
+
+    .about-overlay {
+        overflow: auto;
+    }
+
     .about-overlay-image-wrap {
-        top: var(--eighteenpixels);
-        right: var(--eighteenpixels);
-        width: var(--ninety-sixpixels);
+        position: var(--positionrelative);
+        top: var(--auto);
+        right: var(--auto);
+        width: min(220px, 72vw);
+        margin: 64px auto var(--sixteenpixels) auto;
         border-radius: var(--tenpixels);
     }
 
     .about-overlay-content {
-        padding: 64px 20px 20px 20px;
-        padding-right: 130px;
+        padding: 0 20px 20px 20px;
+        padding-right: 20px;
     }
 
     .about-overlay-name {

@@ -273,20 +273,20 @@
     }
 
     .ds360-problems-core {
-        width: min(240px, 62vw);
+        width: min(184px, 52vw);
     }
 
     .ds360-problems-core-ring {
-        width: min(124px, 32vw);
-        border-width: 10px;
+        width: min(96px, 28vw);
+        border-width: 8px;
     }
 
     .ds360-problems-core-dot {
-        width: 34px;
-        height: 34px;
-        border-width: 5px;
-        left: calc(50% + 36px);
-        top: calc(50% - 53px);
+        width: 26px;
+        height: 26px;
+        border-width: 4px;
+        left: calc(50% + 27px);
+        top: calc(50% - 40px);
     }
 
     .ds360-problems-list {
