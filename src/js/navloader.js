@@ -2,7 +2,7 @@
     const mount = document.getElementById('navMount');
     if (!mount) return;
 
-    fetch('./nav.html')
+    fetch('/src/pages/nav.html')
         .then((response) => {
             if (!response.ok) {
                 throw new Error(`Nav load failed: ${response.status}`);
@@ -19,3 +19,4 @@
             console.error(error);
         });
 })();
+
