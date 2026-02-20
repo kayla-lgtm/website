@@ -14,7 +14,7 @@
     var industries = [
         {
             title: "Finance",
-            image: "../images/GridPhotos/GridFinance.jpg",
+            image: "src/images/GridPhotos/GridFinance.jpg",
             alt: "Finance industry",
             useCases: [
                 { label: "Fraud Detection", body: "Detect suspicious transactions in real time with explainable risk scoring and escalation workflows." },
@@ -26,7 +26,7 @@
         },
         {
             title: "Manufacturing",
-            image: "../images/GridPhotos/GridManufacturing.jpg",
+            image: "src/images/GridPhotos/GridManufacturing.jpg",
             alt: "Manufacturing industry",
             useCases: [
                 { label: "Predictive Maintenance", body: "Flag equipment anomalies before failure by learning machine behavior across shifts." },
@@ -38,7 +38,7 @@
         },
         {
             title: "Warehousing",
-            image: "../images/GridPhotos/GridWarehousing.jpeg",
+            image: "src/images/GridPhotos/GridWarehousing.jpeg",
             alt: "Warehousing industry",
             useCases: [
                 { label: "Slotting Optimization", body: "Continuously rebalance pick paths and product placement based on demand shifts." },
@@ -50,7 +50,7 @@
         },
         {
             title: "Transportation & Logistics",
-            image: "../images/GridPhotos/GridTransportation.jpg",
+            image: "src/images/GridPhotos/GridTransportation.jpg",
             alt: "Transportation industry",
             useCases: [
                 { label: "Route Risk Scoring", body: "Blend weather, congestion, and historical delay data to optimize dispatch." },
@@ -62,7 +62,7 @@
         },
         {
             title: "State Government",
-            image: "../images/GridPhotos/GridStateGovernment.jpg",
+            image: "src/images/GridPhotos/GridStateGovernment.jpg",
             alt: "State government industry",
             useCases: [
                 { label: "Citizen Service Triage", body: "Route public requests to the right agency teams with faster response-time prioritization." },
@@ -74,7 +74,7 @@
         },
         {
             title: "Real Estate",
-            image: "../images/GridPhotos/GridRealEstate.jpg",
+            image: "src/images/GridPhotos/GridRealEstate.jpg",
             alt: "Real estate industry",
             useCases: [
                 { label: "Asset Performance", body: "Track NOI drivers and benchmark property performance across regions." },

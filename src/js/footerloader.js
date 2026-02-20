@@ -2,7 +2,7 @@
     const mount = document.getElementById("footerMount");
     if (!mount) return;
 
-    fetch("/src/pages/footer.html")
+    fetch(window.location.pathname.includes('/src/pages/') ? './footer.html' : 'src/pages/footer.html')
         .then((response) => {
             if (!response.ok) {
                 throw new Error(`Footer load failed: ${response.status}`);
