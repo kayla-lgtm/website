@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "newwebsite",
+			"path": "../.."
+		},
+		{
+			"name": "src",
+			"path": "../../../Second Foundation Reloaded/src"
+		},
+		{
+			"name": ".vscode",
+			"path": "../../../Second Foundation Reloaded/.vscode"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "newwebsite"
+	}
+}

@@ -1,0 +1,506 @@
+.watsonx-page {
+    width: var(--widthfull);
+    min-height: 100vh;
+    background: linear-gradient(166deg, #1e2635 0%, #263246 52%, #342939 100%);
+}
+
+.material-symbols-outlined {
+    font-family: "Material Symbols Outlined";
+    font-weight: var(--weightregular);
+    font-style: normal;
+    font-size: var(--twentyfourpixels);
+    line-height: var(--one);
+    letter-spacing: normal;
+    text-transform: none;
+    display: var(--displayinlineblock);
+    white-space: var(--whitespacenowrap);
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "liga";
+}
+
+.watsonx-hero {
+    width: var(--widthfull);
+    min-height: 100vh;
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    background-image: url("../images/watsonx/watsonxhero.jpg");
+    background-size: var(--backgroundcover);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.watsonx-hero-overlay {
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    z-index: var(--one);
+    background:
+        linear-gradient(180deg, rgba(7, 13, 24, 0.34) 0%, rgba(7, 13, 24, 0.18) 42%, rgba(7, 13, 24, 0.32) 100%),
+        radial-gradient(64% 52% at 52% 50%, rgba(18, 28, 47, 0.14) 0%, rgba(18, 28, 47, 0.34) 100%);
+}
+
+.watsonx-scroll-cue {
+    position: var(--positionabsolute);
+    left: var(--half);
+    bottom: var(--twentypixels);
+    transform: translateX(-50%);
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    border: var(--onepixel) solid rgba(255, 255, 255, 0.64);
+    background: rgba(123, 72, 98, 0.22);
+    backdrop-filter: blur(14px) saturate(150%);
+    -webkit-backdrop-filter: blur(14px) saturate(150%);
+    color: var(--colorwhite);
+    font-size: 22px;
+    line-height: 1;
+    text-decoration: var(--none);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    z-index: 2;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.watsonx-scroll-cue:hover {
+    background: rgba(123, 72, 98, 0.34);
+    transform: translateX(-50%) translateY(-2px);
+}
+
+.watsonx-scroll-cue:focus-visible {
+    outline: 3px solid rgba(25, 61, 114, 0.55);
+    outline-offset: 2px;
+}
+
+.watsonx-shell {
+    width: var(--widthfull);
+    max-width: 980px;
+    margin: var(--marginzeroauto);
+}
+
+.watsonx-intro {
+    min-height: 100vh;
+    width: var(--widthfull);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.watsonx-intro-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizepagetitle);
+    font-weight: var(--weightsemibold);
+    line-height: 1.35;
+    text-align: var(--aligncenter);
+    color: rgba(246, 249, 255, 0.96);
+}
+
+.watsonx-intro-copy {
+    margin: var(--fortypixels) auto 0 auto;
+    max-width: 74ch;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    line-height: 1.6;
+    text-align: var(--aligncenter);
+    color: rgba(230, 238, 247, 0.88);
+}
+
+.watsonx-business {
+    min-height: 100vh;
+    width: var(--widthfull);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.watsonx-section-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizepagetitle);
+    font-weight: var(--weightsemibold);
+    line-height: 1.1;
+    text-align: var(--aligncenter);
+    color: rgba(246, 249, 255, 0.96);
+}
+
+.watsonx-business-grid {
+    margin-top: var(--fortypixels);
+    width: var(--widthfull);
+    display: var(--displaygrid);
+    grid-template-columns: repeat(3, minmax(0, var(--oneframe)));
+    gap: var(--twentypixels);
+}
+
+.watsonx-business-card {
+    min-height: calc(var(--onehundredpixels) + var(--onehundredpixels) + var(--sixtypixels));
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.24);
+    border-radius: var(--twentypixels);
+    background: linear-gradient(150deg, rgba(228, 238, 252, 0.12) 0%, rgba(213, 194, 213, 0.08) 100%);
+    box-shadow: 0 14px 34px rgba(7, 12, 22, 0.34), 0 0 0 1px rgba(142, 86, 113, 0.14);
+    backdrop-filter: blur(10px) saturate(130%);
+    -webkit-backdrop-filter: blur(10px) saturate(130%);
+    padding: var(--twentypixels);
+}
+
+.watsonx-card-icon {
+    display: var(--displayinlineblock);
+    font-size: var(--fortypixels);
+    font-variation-settings:
+        "FILL" 0,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 24;
+    color: rgba(245, 249, 255, 0.94);
+}
+
+.watsonx-card-title {
+    margin: var(--sixteenpixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizesectiontitle);
+    font-weight: var(--weightsemibold);
+    line-height: 1.2;
+    color: rgba(245, 249, 255, 0.96);
+}
+
+.watsonx-card-copy {
+    margin: var(--sixteenpixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizebodyregular);
+    font-weight: var(--weightregular);
+    line-height: 1.6;
+    color: rgba(230, 238, 247, 0.88);
+}
+
+.watsonx-productivity {
+    min-height: 100vh;
+    width: var(--widthfull);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.watsonx-productivity-layout {
+    margin-top: var(--fortypixels);
+    width: var(--widthfull);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    gap: 56px;
+}
+
+.watsonx-productivity-left,
+.watsonx-productivity-right {
+    width: var(--half);
+}
+
+.watsonx-productivity-right {
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifyend);
+}
+
+.watsonx-accordion {
+    width: var(--widthfull);
+    max-width: 54ch;
+}
+
+.watsonx-image-frame {
+    width: var(--widthfull);
+    max-width: 860px;
+    background: rgba(17, 23, 34, 0.68);
+    border-radius: var(--tenpixels);
+    overflow: var(--hidden);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 14px 30px rgba(8, 10, 16, 0.32);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.watsonx-image-frame:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(122, 72, 96, 0.12);
+}
+
+.watsonx-image {
+    width: var(--widthfull);
+    height: var(--auto);
+    object-fit: var(--contain);
+    display: var(--displayblock);
+}
+
+.watsonx-offer-item {
+    border-top: var(--onepixel) solid rgba(255, 255, 255, 0.12);
+    padding: 24px var(--paddingzero);
+}
+
+.watsonx-offer-item:first-child {
+    border-top: var(--none);
+}
+
+.watsonx-offer-item:last-child {
+    border-bottom: var(--onepixel) solid rgba(255, 255, 255, 0.12);
+}
+
+.watsonx-offer-trigger {
+    width: var(--widthfull);
+    border: var(--none);
+    background: var(--backgroundtransparent);
+    text-align: var(--alignleft);
+    padding: var(--paddingzero);
+    margin: var(--marginzero);
+    cursor: var(--pointer);
+    color: rgba(243, 247, 252, 0.94);
+    text-shadow: 0 1px 2px rgba(6, 10, 18, 0.14);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    line-height: 1.4;
+    transition: color 0.25s ease, padding-left 0.25s ease;
+    border-radius: 4px;
+}
+
+.watsonx-offer-trigger:hover {
+    color: #d8aec3;
+    padding-left: 8px;
+}
+
+.watsonx-offer-content {
+    max-height: var(--zero);
+    opacity: var(--zero);
+    overflow: var(--hidden);
+    margin: var(--marginzero);
+    color: rgba(243, 247, 252, 0.94);
+    text-shadow: 0 1px 2px rgba(6, 10, 18, 0.14);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    line-height: 1.55;
+    transition: max-height 0.25s ease, opacity 0.25s ease, margin-top 0.25s ease;
+}
+
+.watsonx-offer-meta,
+.watsonx-offer-body {
+    margin: var(--marginzero);
+}
+
+.watsonx-offer-meta {
+    font-size: var(--textsizetiny);
+    font-weight: var(--weightmedium);
+    line-height: 1.4;
+    color: rgba(243, 247, 252, 0.82);
+}
+
+.watsonx-offer-body {
+    margin-top: var(--paddingten);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    line-height: 1.55;
+    color: rgba(243, 247, 252, 0.94);
+}
+
+.watsonx-offer-item.is-active .watsonx-offer-trigger {
+    color: #d8aec3;
+    font-weight: var(--weightsemibold);
+}
+
+.watsonx-offer-item.is-active .watsonx-offer-content {
+    max-height: 180px;
+    opacity: var(--one);
+    margin-top: var(--paddingten);
+}
+
+.watsonx-case-studies {
+    min-height: 100vh;
+    width: var(--widthfull);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.watsonx-case-studies-intro {
+    text-align: var(--aligncenter);
+}
+
+.watsonx-case-studies-grid {
+    margin-top: var(--sixtypixels);
+    display: var(--displaygrid);
+    grid-template-columns: repeat(auto-fit, minmax(290px, var(--oneframe)));
+    gap: var(--twentypixels);
+}
+
+.watsonx-case-study-tile {
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    text-decoration: var(--none);
+    border-radius: var(--twentypixels);
+    background: linear-gradient(150deg, rgba(228, 238, 252, 0.12) 0%, rgba(213, 194, 213, 0.08) 100%);
+    border: var(--onepixel) solid rgba(245, 249, 255, 0.24);
+    box-shadow: 0 14px 34px rgba(7, 12, 22, 0.34), 0 0 0 1px rgba(142, 86, 113, 0.14);
+    backdrop-filter: blur(10px) saturate(130%);
+    -webkit-backdrop-filter: blur(10px) saturate(130%);
+    aspect-ratio: 4 / 3;
+    transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.32s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.32s ease;
+}
+
+.watsonx-case-study-tile::before {
+    content: "";
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.02) 38%, rgba(255, 255, 255, 0) 100%),
+        radial-gradient(120% 90% at 100% 0%, rgba(130, 72, 99, 0.16) 0%, rgba(130, 72, 99, 0) 64%);
+    pointer-events: var(--none);
+    z-index: var(--one);
+}
+
+.watsonx-case-study-tile:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 46px rgba(7, 12, 22, 0.42), 0 0 0 1px rgba(156, 100, 126, 0.22);
+    border-color: rgba(245, 249, 255, 0.32);
+}
+
+.watsonx-case-study-tile:focus-visible {
+    outline: 3px solid rgba(34, 66, 116, 0.54);
+    outline-offset: 3px;
+}
+
+.watsonx-case-study-image {
+    width: var(--widthfull);
+    height: var(--widthfull);
+    display: var(--displayblock);
+    object-fit: var(--cover);
+    filter: saturate(92%) contrast(98%) brightness(0.88);
+    transition: transform 0.36s cubic-bezier(0.16, 1, 0.3, 1), filter 0.36s ease;
+}
+
+.watsonx-case-study-tile:hover .watsonx-case-study-image {
+    transform: scale(1.03);
+    filter: saturate(98%) contrast(100%) brightness(0.96);
+}
+
+.watsonx-case-study-label {
+    position: var(--positionabsolute);
+    left: var(--zero);
+    right: var(--zero);
+    bottom: var(--zero);
+    margin: var(--marginzero);
+    padding: var(--twentypixels) var(--eighteenpixels);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    line-height: 1.3;
+    font-weight: var(--weightsemibold);
+    color: rgba(246, 249, 255, 0.95);
+    background: linear-gradient(0deg, rgba(16, 24, 36, 0.78) 0%, rgba(16, 24, 36, 0.52) 54%, rgba(16, 24, 36, 0.08) 100%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 2;
+}
+
+@media (max-width: 900px) {
+    .watsonx-intro {
+        min-height: var(--auto);
+        display: var(--displayblock);
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .watsonx-intro-title {
+        font-size: var(--textsizepagetitle);
+    }
+
+    .watsonx-intro-copy {
+        font-size: var(--textsizebodyregular);
+    }
+
+    .watsonx-business {
+        min-height: var(--auto);
+        display: var(--displayblock);
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .watsonx-section-title {
+        font-size: var(--textsizepagetitle);
+    }
+
+    .watsonx-business-grid {
+        margin-top: var(--fortypixels);
+        grid-template-columns: var(--oneframe);
+    }
+
+    .watsonx-productivity {
+        min-height: var(--auto);
+        display: var(--displayblock);
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .watsonx-productivity-layout {
+        flex-direction: var(--flexcolumn);
+        gap: var(--twentypixels);
+    }
+
+    .watsonx-productivity-left,
+    .watsonx-productivity-right {
+        width: var(--widthfull);
+    }
+
+    .watsonx-productivity-right {
+        display: var(--none);
+    }
+
+    .watsonx-accordion {
+        max-width: var(--widthfull);
+    }
+
+    .watsonx-image-frame {
+        max-width: var(--widthfull);
+    }
+
+    .watsonx-offer-item {
+        padding: 24px var(--paddingzero);
+    }
+
+    .watsonx-offer-item.is-active .watsonx-offer-content {
+        margin-top: var(--eighteenpixels);
+    }
+
+    .watsonx-offer-item .watsonx-image-frame {
+        width: var(--widthfull);
+        max-width: 730px;
+        margin-top: 24px;
+        margin-left: var(--marginzero);
+        margin-right: var(--auto);
+    }
+
+    .watsonx-case-studies {
+        min-height: var(--auto);
+        display: var(--displayblock);
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .watsonx-case-studies-grid {
+        margin-top: var(--fortypixels);
+        gap: 18px;
+    }
+
+    .watsonx-case-study-tile {
+        aspect-ratio: 16 / 10;
+    }
+
+    .watsonx-case-study-label {
+        font-size: var(--sixteenpixels);
+        padding: var(--sixteenpixels) var(--fourteenpixels);
+    }
+}

@@ -140,6 +140,19 @@
     margin-top: var(--fivepixels);
 }
 
+.casestudy-copy {
+    margin: var(--thirteenpixels) 0 0 0;
+    font-family: var(--fontfamily);
+    font-size: var(--fifteenpixels);
+    font-weight: var(--weightregular);
+    line-height: 1.6;
+    color: rgba(234, 241, 250, 0.9);
+}
+
+.casestudy-copy + .casestudy-copy {
+    margin-top: var(--paddingten);
+}
+
 .casestudy-empty {
     text-align: var(--aligncenter);
 }
@@ -174,6 +187,10 @@
     }
 
     .casestudy-list li {
+        font-size: var(--fourteenpixels);
+    }
+
+    .casestudy-copy {
         font-size: var(--fourteenpixels);
     }
 }

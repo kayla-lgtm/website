@@ -1,0 +1,84 @@
+.products-page {
+    width: var(--widthfull);
+    min-height: 100vh;
+    background: linear-gradient(166deg, #1e2635 0%, #263246 52%, #342939 100%);
+}
+
+.products-hero {
+    min-height: 100vh;
+    width: var(--widthfull);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.products-shell {
+    width: var(--widthfull);
+    max-width: 980px;
+    margin: var(--marginzeroauto);
+    text-align: var(--aligncenter);
+}
+
+.products-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizehero);
+    font-weight: var(--weightsemibold);
+    line-height: 1.1;
+    color: rgba(246, 249, 255, 0.96);
+}
+
+.products-copy {
+    margin: var(--fortypixels) auto 0 auto;
+    max-width: 62ch;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    line-height: 1.6;
+    color: rgba(230, 238, 247, 0.88);
+}
+
+.products-grid {
+    margin-top: var(--sixtypixels);
+    width: var(--widthfull);
+    display: var(--displaygrid);
+    grid-template-columns: repeat(3, minmax(0, var(--oneframe)));
+    gap: var(--twentypixels);
+}
+
+.products-card {
+    min-height: calc(var(--onehundredpixels) + var(--onehundredpixels) + var(--sixtypixels));
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.24);
+    border-radius: var(--twentypixels);
+    background: linear-gradient(150deg, rgba(228, 238, 252, 0.12) 0%, rgba(213, 194, 213, 0.08) 100%);
+    box-shadow: 0 14px 34px rgba(7, 12, 22, 0.34), 0 0 0 1px rgba(142, 86, 113, 0.14);
+    backdrop-filter: blur(10px) saturate(130%);
+    -webkit-backdrop-filter: blur(10px) saturate(130%);
+    transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.products-card:hover {
+    border-color: rgba(245, 249, 255, 0.42);
+    box-shadow: 0 20px 44px rgba(7, 12, 22, 0.36), 0 0 26px rgba(173, 132, 198, 0.22);
+    transform: translateY(calc(var(--twopixels) * -1));
+}
+
+@media (max-width: 900px) {
+    .products-hero {
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .products-title {
+        font-size: var(--textsizepagetitle);
+    }
+
+    .products-copy {
+        font-size: var(--textsizebodyregular);
+    }
+
+    .products-grid {
+        margin-top: var(--fortypixels);
+        grid-template-columns: var(--oneframe);
+    }
+}
