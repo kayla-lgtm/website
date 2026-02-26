@@ -1,0 +1,21 @@
+.ensitech-page {
+    width: var(--widthfull);
+    min-height: 100vh;
+    background: linear-gradient(165deg, rgba(10, 14, 24, 1) 0%, rgba(17, 14, 24, 1) 54%, rgba(13, 16, 24, 1) 100%);
+}
+
+.ensitech-shell {
+    min-height: 100vh;
+    width: var(--widthfull);
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+@media (max-width: 900px) {
+    .ensitech-shell {
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+}
