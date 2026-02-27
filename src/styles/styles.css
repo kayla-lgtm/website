@@ -3,6 +3,8 @@
     --alignright: right;
     --aligncenter: center;
 
+    --background1:linear-gradient(168deg, #38293d 0%, #121720 52%, #000000 100%);
+    --background2:linear-gradient(0deg, #38293d 0%, #121720 52%, #000000 100%);
     --backgroundcover: cover;
     --backgroundtransparent: transparent;
 

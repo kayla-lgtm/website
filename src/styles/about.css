@@ -1,7 +1,6 @@
 .about-page {
     width: var(--widthfull);
-    background: linear-gradient(166deg, #1e2635 0%, #263246 52%, #342939 100%);
-    min-height: 100vh;
+    background: var(--background1);
 }
 
 .about-team-section {

@@ -1,6 +1,6 @@
 .offers-section {
     width: var(--widthfull);
-    background-color: #202b3b;
+    background-color: var(--background2);
     overflow: var(--hidden);
     position: var(--positionrelative);
     min-height: 100vh;

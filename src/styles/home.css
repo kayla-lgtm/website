@@ -139,6 +139,20 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 92vh;
     display: var(--displayflex);
     align-items: var(--aligncenter);
+    width: var(--widthfull);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    background: var(--background1);
+}
+
+.offers-section {
+    position: var(--positionrelative);
+    background: var(--background2);
+}
+
+.industries-section {
+    position: var(--positionrelative);
+    background: var(--background1);
 }
 
 .neuranetcontainer {
@@ -179,19 +193,6 @@ h1, h2, h3, h4, h5, h6 {
     position: var(--positionrelative);
 }
 
-.neuranetrightcontainer::before {
-    content: "";
-    position: var(--positionabsolute);
-    width: clamp(220px, 28vw, 360px);
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    background:
-        radial-gradient(circle, rgba(152, 91, 118, 0.40) 0%, rgba(152, 91, 118, 0.18) 36%, rgba(152, 91, 118, 0) 74%);
-    filter: blur(24px);
-    z-index: 0;
-    pointer-events: none;
-}
-
 .neuranetcontainerlogo {
     width: 92%;
     max-width: 520px;
@@ -225,6 +226,56 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 0 1px 2px rgba(6, 10, 18, 0.14);
 }
 
+.industries-tile {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.industries-tile:hover {
+    transform: translateY(-6px) scale(1.015);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18), 0 4px 12px rgba(0, 0, 0, 0.10), 0 0 0 1px rgba(124, 58, 237, 0.08);
+}
+
+.industries-tile .industries-tile-label {
+    transition: transform 0.3s ease;
+}
+
+.industries-tile:hover .industries-tile-label {
+    transform: translateY(0);
+}
+
+.offer-trigger {
+    transition: color 0.25s ease, padding-left 0.25s ease;
+    border-radius: 4px;
+}
+
+.offer-trigger:hover {
+    color: #d8aec3;
+    padding-left: 8px;
+}
+
+.offer-item.is-active .offer-trigger {
+    color: #d8aec3;
+    font-weight: var(--weightsemibold);
+}
+
+.offers-image-frame {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.offers-image-frame:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(122, 72, 96, 0.12);
+}
+
+.neuranetcontainerlogo {
+    animation: logoFloat 6s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
 @media (max-width: 768px) {
     .herocontainer {
         height: 220vh;
@@ -243,13 +294,14 @@ h1, h2, h3, h4, h5, h6 {
         width: var(--widthfull);
         padding: var(--paddingzero);
         justify-content: var(--justifycenter);
+        align-items: flex-start;
     }
 
     .textcontainer {
         width: var(--widthfull);
         max-width: var(--widthfull);
         margin: var(--marginzeroauto);
-        padding: 0 var(--twentypixels);
+        padding: 136px var(--twentypixels) 0 var(--twentypixels);
         align-items: var(--aligncenter);
         text-align: var(--aligncenter);
     }
@@ -299,7 +351,17 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* ── DS360 Mature Redesign Block (append-only) ───────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+    .neuranetcontainerlogo {
+        animation: none !important;
+    }
+
+    .industries-tile,
+    .offers-image-frame,
+    .offer-trigger {
+        transition: none !important;
+    }
+}
 
 .ds360-section {
     width: var(--widthfull);
@@ -309,20 +371,7 @@ h1, h2, h3, h4, h5, h6 {
     display: var(--displayflex);
     align-items: var(--aligncenter);
     padding: 120px var(--eightypixels);
-    background:
-        linear-gradient(160deg, rgba(26, 33, 46, 0.96) 0%, rgba(36, 44, 61, 0.94) 56%, rgba(43, 35, 49, 0.94) 100%);
-}
-
-.ds360-section::before {
-    content: "";
-    position: var(--positionabsolute);
-    inset: var(--zero);
-    background:
-        radial-gradient(52% 42% at 16% 24%, rgba(152, 91, 118, 0.20) 0%, rgba(152, 91, 118, 0) 72%),
-        radial-gradient(46% 40% at 84% 78%, rgba(72, 110, 156, 0.18) 0%, rgba(72, 110, 156, 0) 74%);
-    filter: blur(20px);
-    pointer-events: var(--none);
-    z-index: 0;
+    background: var(--background2);
 }
 
 .ds360-inner {
@@ -518,19 +567,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: var(--hidden);
     padding: 120px var(--eightypixels);
     background:
-        linear-gradient(162deg, rgba(29, 36, 50, 0.98) 0%, rgba(36, 44, 61, 0.96) 54%, rgba(44, 35, 50, 0.95) 100%);
-}
-
-.case-studies-section::before {
-    content: "";
-    position: var(--positionabsolute);
-    inset: var(--zero);
-    background:
-        radial-gradient(44% 36% at 18% 20%, rgba(147, 88, 114, 0.18) 0%, rgba(147, 88, 114, 0) 74%),
-        radial-gradient(40% 34% at 86% 80%, rgba(73, 108, 152, 0.18) 0%, rgba(73, 108, 152, 0) 74%);
-    pointer-events: var(--none);
-    z-index: 0;
-}
+        var(--background1);
 
 .case-studies-inner {
     width: var(--widthfull);
@@ -589,9 +626,7 @@ h1, h2, h3, h4, h5, h6 {
     content: "";
     position: var(--positionabsolute);
     inset: 0;
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.02) 38%, rgba(255, 255, 255, 0) 100%),
-        radial-gradient(120% 90% at 100% 0%, rgba(130, 72, 99, 0.16) 0%, rgba(130, 72, 99, 0) 64%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.02) 38%, rgba(255, 255, 255, 0) 100%);
     pointer-events: var(--none);
     z-index: 1;
 }

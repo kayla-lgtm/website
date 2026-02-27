@@ -2,8 +2,7 @@
     width: var(--widthfull);
     position: var(--positionrelative);
     overflow: var(--hidden);
-    background: linear-gradient(162deg, rgba(28, 35, 49, 0.98) 0%, rgba(35, 43, 60, 0.96) 58%, rgba(42, 34, 48, 0.95) 100%);
-    border-top: var(--onepixel) solid rgba(245, 249, 255, 0.16);
+    background: var(--background1);
 }
 
 .site-footer::before {
@@ -11,8 +10,7 @@
     position: var(--positionabsolute);
     inset: var(--zero);
     background:
-        radial-gradient(46% 38% at 12% 12%, rgba(151, 91, 118, 0.16) 0%, rgba(151, 91, 118, 0) 72%),
-        radial-gradient(40% 34% at 88% 84%, rgba(74, 108, 150, 0.14) 0%, rgba(74, 108, 150, 0) 74%);
+       var(--background1);
     pointer-events: var(--none);
     z-index: 0;
 }

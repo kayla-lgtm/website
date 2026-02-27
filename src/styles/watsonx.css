@@ -1,8 +1,7 @@
 .watsonx-page {
     width: var(--widthfull);
     min-height: 100vh;
-    background: linear-gradient(166deg, #1e2635 0%, #263246 52%, #342939 100%);
-}
+    background: var(--background1);
 
 .material-symbols-outlined {
     font-family: "Material Symbols Outlined";
