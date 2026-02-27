@@ -117,27 +117,40 @@
 
     function initHeroParallax() {
         var hero = document.querySelector(".hero");
-        if (!hero) return;
+        var heroContainer = document.querySelector(".herocontainer");
+        if (!hero || !heroContainer) return;
 
         // Respect reduced motion
         if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
             return;
         }
 
+        function applyHeroParallax() {
+            var rect = heroContainer.getBoundingClientRect();
+            var scrollRange = Math.max(1, heroContainer.offsetHeight - window.innerHeight);
+            var progress = Math.max(0, Math.min(1, (-rect.top) / scrollRange));
+            var motionCutoff = 0.78;
+            var motionProgress = Math.min(1, progress / motionCutoff);
+            var skyShift = -50 * motionProgress;
+            hero.style.setProperty("--hero-sky-shift", skyShift + "%");
+            hero.style.setProperty("--hero-foreground-dark-opacity", String(motionProgress));
+        }
+
+        applyHeroParallax();
+
         var ticking = false;
         window.addEventListener("scroll", function () {
             if (!ticking) {
                 window.requestAnimationFrame(function () {
-                    var scrollY = window.pageYOffset || document.documentElement.scrollTop;
-                    var heroHeight = hero.offsetHeight;
-                    if (scrollY < heroHeight) {
-                        var parallaxOffset = scrollY * 0.3;
-                        hero.style.backgroundPositionY = parallaxOffset + "px";
-                    }
+                    applyHeroParallax();
                     ticking = false;
                 });
                 ticking = true;
             }
+        });
+
+        window.addEventListener("resize", function () {
+            applyHeroParallax();
         });
     }
 

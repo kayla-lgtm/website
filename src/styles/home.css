@@ -2,21 +2,50 @@
     margin: var(--marginzero);
     padding: var(--paddingzero);
     width: var(--widthfull);
-    height: 100vh;
+    height: 240vh;
 }
 
 .hero {
-    background-image: url('../images/HeroImage.jpg');
-    background-size: var(--backgroundcover);
+    --hero-sky-shift: 0%;
+    --hero-sky-image-1: url('../images/sky1.jpg');
+    --hero-sky-image-2: url('../images/nightsky3.jpg');
+    --hero-foreground-dark-opacity: 0;
     width: var(--widthfull);
     padding: var(--paddingzero);
     margin: var(--marginzero);
-    height: var(--widthfull);
+    height: 100vh;
     display: var(--displayflex);
     align-items: var(--aligncenter);
     position: var(--positionrelative);
     overflow: var(--hidden);
-    background-attachment: fixed;
+    top: var(--zero);
+    position: sticky;
+}
+
+.hero-sky-track {
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    height: 200%;
+    width: var(--widthfull);
+    transform: translate3d(0, var(--hero-sky-shift), 0);
+    will-change: transform;
+    z-index: 0;
+}
+
+.hero-sky {
+    width: var(--widthfull);
+    height: 50%;
+    background-size: var(--backgroundcover);
+    background-position: var(--backgroundcenter);
+    background-repeat: var(--nonerepeat);
+}
+
+.hero-sky-1 {
+    background-image: var(--hero-sky-image-1);
+}
+
+.hero-sky-2 {
+    background-image: var(--hero-sky-image-2);
 }
 
 .textcontainer {
@@ -28,9 +57,25 @@
     width: var(--half);
     height: var(--auto);
     position: var(--positionrelative);
-    z-index: 1;
+    z-index: 3;
     justify-content: var(--justifycenter);
     gap: var(--twentypixels);
+}
+
+.hero-foreground {
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    width: var(--widthfull);
+    height: var(--widthfull);
+    object-fit: var(--cover);
+    object-position: var(--aligncenter);
+    display: var(--displayblock);
+    z-index: 2;
+    pointer-events: var(--none);
+}
+
+.hero-foreground-dark {
+    opacity: var(--hero-foreground-dark-opacity);
 }
 
 .herotext {
@@ -87,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
         linear-gradient(90deg, rgba(8, 15, 30, 0.58) 0%, rgba(8, 15, 30, 0.36) 38%, rgba(8, 15, 30, 0.10) 62%, rgba(8, 15, 30, 0.06) 100%),
         linear-gradient(180deg, rgba(4, 8, 20, 0.30) 0%, rgba(4, 8, 20, 0.12) 30%, rgba(4, 8, 20, 0.22) 100%);
     pointer-events: var(--none);
+    z-index: 2;
 }
 
 .neuranet-section {
@@ -181,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .herocontainer {
-        height: 100vh;
+        height: 220vh;
         width: var(--widthfull);
         max-width: var(--widthfull);
     }
