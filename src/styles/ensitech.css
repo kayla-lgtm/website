@@ -4,18 +4,851 @@
     background: linear-gradient(165deg, rgba(10, 14, 24, 1) 0%, rgba(17, 14, 24, 1) 54%, rgba(13, 16, 24, 1) 100%);
 }
 
-.ensitech-shell {
+.ensitech-hero {
+    width: var(--widthfull);
     min-height: 100vh;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    padding: var(--paddingzero);
+}
+
+.ensitech-hero-video {
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    width: var(--widthfull);
+    height: 100%;
+    object-fit: var(--contain);
+    object-position: var(--aligncenter);
+    display: var(--displayblock);
+    background: #d9dde4;
+}
+
+.ensitech-hero-overlay {
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    background: linear-gradient(
+        180deg,
+        rgba(7, 13, 24, 0.78) 0%,
+        rgba(7, 13, 24, 0.52) 11%,
+        rgba(7, 13, 24, 0.24) 22%,
+        rgba(7, 13, 24, 0.08) 30%,
+        rgba(7, 13, 24, 0) 38%
+    );
+    z-index: var(--one);
+    pointer-events: var(--none);
+}
+
+.ensitech-shell {
+    position: var(--positionrelative);
+    z-index: 2;
+    min-height: var(--auto);
+    width: var(--widthfull);
+    display: var(--displayblock);
+}
+
+.ensitech-scroll-cue {
+    position: var(--positionabsolute);
+    left: var(--half);
+    bottom: var(--twentypixels);
+    transform: translateX(-50%);
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    border: var(--onepixel) solid rgba(255, 255, 255, 0.64);
+    background: rgba(123, 72, 98, 0.22);
+    backdrop-filter: blur(14px) saturate(150%);
+    -webkit-backdrop-filter: blur(14px) saturate(150%);
+    color: var(--colorwhite);
+    font-size: 22px;
+    line-height: 1;
+    text-decoration: var(--none);
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    z-index: 2;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.ensitech-scroll-cue:hover {
+    background: rgba(123, 72, 98, 0.34);
+    transform: translateX(-50%) translateY(-2px);
+}
+
+.ensitech-scroll-cue:focus-visible {
+    outline: 3px solid rgba(25, 61, 114, 0.55);
+    outline-offset: 2px;
+}
+
+.ensitech-next-anchor {
+    position: var(--positionrelative);
+    top: -1px;
+}
+
+.ensitech-staff {
+    width: var(--widthfull);
+    min-height: 100vh;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.ensitech-staff-lottie {
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    z-index: var(--zero);
+    opacity: 0.05;
+    pointer-events: var(--none);
+}
+
+#ensitechStaffLottie {
+    width: var(--widthfull);
+    height: 100%;
+}
+
+.ensitech-staff-shell {
+    width: var(--widthfull);
+    max-width: 1120px;
+    margin: var(--marginzeroauto);
+    position: var(--positionrelative);
+    z-index: var(--one);
+}
+
+.ensitech-staff-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizepagetitle);
+    font-weight: var(--weightsemibold);
+    line-height: 1.1;
+    text-align: var(--aligncenter);
+    color: rgba(246, 249, 255, 0.96);
+}
+
+.ensitech-staff-copy {
+    margin: var(--fortypixels) auto 0 auto;
+    max-width: 76ch;
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    line-height: 1.6;
+    text-align: var(--aligncenter);
+    color: rgba(230, 238, 247, 0.88);
+}
+
+.ensitech-staff-benefits {
+    margin-top: var(--sixtypixels);
+    width: var(--widthfull);
+    display: var(--displaygrid);
+    gap: var(--fortypixels);
+}
+
+.ensitech-staff-benefits-row {
+    display: var(--displaygrid);
+    justify-content: var(--justifycenter);
+    justify-items: var(--aligncenter);
+    gap: var(--fortypixels);
+}
+
+.ensitech-staff-benefits-row-top {
+    grid-template-columns: repeat(3, minmax(190px, 230px));
+}
+
+.ensitech-staff-benefits-row-bottom {
+    grid-template-columns: repeat(2, minmax(190px, 230px));
+}
+
+.ensitech-benefit-item {
     width: var(--widthfull);
     display: var(--displayflex);
     flex-direction: var(--flexcolumn);
     align-items: var(--aligncenter);
+    text-align: var(--aligncenter);
+}
+
+.ensitech-benefit-icon {
+    width: 72px;
+    height: 72px;
+    object-fit: var(--contain);
+    display: var(--displayblock);
+}
+
+.ensitech-benefit-label {
+    margin: var(--twentypixels) var(--marginzero) var(--marginzero) var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightsemibold);
+    line-height: 1.4;
+    color: rgba(245, 249, 255, 0.96);
+}
+
+.ensitech-software {
+    width: var(--widthfull);
+    min-height: 100vh;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
     justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
     padding: 116px var(--fortypixels) var(--sixtypixels);
 }
 
+.ensitech-software-shell {
+    width: var(--widthfull);
+    max-width: 1120px;
+    margin: var(--marginzeroauto);
+}
+
+.ensitech-software-layout {
+    width: var(--widthfull);
+    display: var(--displaygrid);
+    grid-template-columns: minmax(0, var(--oneframe)) minmax(0, var(--oneframe));
+    gap: 56px;
+    align-items: var(--aligncenter);
+}
+
+.ensitech-software-visual {
+    width: var(--widthfull);
+    min-height: 520px;
+    border-radius: var(--twentypixels);
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.24);
+    background:
+        radial-gradient(90% 80% at 16% 16%, rgba(241, 147, 68, 0.2) 0%, rgba(241, 147, 68, 0) 60%),
+        linear-gradient(150deg, rgba(228, 238, 252, 0.12) 0%, rgba(213, 194, 213, 0.08) 100%);
+    box-shadow: 0 14px 34px rgba(7, 12, 22, 0.34), 0 0 0 1px rgba(142, 86, 113, 0.14);
+    backdrop-filter: blur(10px) saturate(130%);
+    -webkit-backdrop-filter: blur(10px) saturate(130%);
+    overflow: var(--hidden);
+}
+
+.ensitech-software-image {
+    width: var(--widthfull);
+    height: 100%;
+    min-height: 520px;
+    object-fit: var(--cover);
+    display: var(--displayblock);
+}
+
+.ensitech-software-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizepagetitle);
+    font-weight: var(--weightsemibold);
+    line-height: 1.1;
+    color: rgba(246, 249, 255, 0.96);
+}
+
+.ensitech-software-points {
+    margin-top: var(--fortypixels);
+    display: var(--displaygrid);
+    gap: 24px;
+}
+
+.ensitech-software-point {
+    display: var(--displaygrid);
+    grid-template-columns: 24px minmax(0, var(--oneframe));
+    gap: var(--eighteenpixels);
+    align-items: var(--aligncenter);
+}
+
+.ensitech-software-point-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: var(--half);
+    display: var(--inlineflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    font-size: var(--twelvepixels);
+    line-height: var(--one);
+    color: rgba(243, 247, 252, 0.96);
+    background: linear-gradient(140deg, rgba(247, 161, 87, 0.92) 0%, rgba(237, 133, 58, 0.9) 100%);
+    box-shadow: 0 6px 14px rgba(17, 12, 10, 0.24);
+}
+
+.ensitech-software-point-copy {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    line-height: 1.55;
+    color: rgba(230, 238, 247, 0.9);
+}
+
+.ensitech-cloud {
+    width: var(--widthfull);
+    min-height: 100vh;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+    padding: 116px var(--fortypixels) var(--sixtypixels);
+}
+
+.ensitech-cloud-shell {
+    width: var(--widthfull);
+    max-width: 1120px;
+    margin: var(--marginzeroauto);
+}
+
+.ensitech-cloud-layout {
+    width: var(--widthfull);
+    display: var(--displaygrid);
+    grid-template-columns: minmax(0, var(--oneframe)) minmax(0, var(--oneframe));
+    gap: 56px;
+    align-items: var(--aligncenter);
+}
+
+.ensitech-cloud-content {
+    width: var(--widthfull);
+}
+
+.ensitech-cloud-title {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizepagetitle);
+    font-weight: var(--weightsemibold);
+    line-height: 1.1;
+    text-align: var(--alignleft);
+    color: rgba(246, 249, 255, 0.96);
+}
+
+.ensitech-cloud-points {
+    margin-top: var(--fortypixels);
+    display: var(--displaygrid);
+    gap: 24px;
+}
+
+.ensitech-cloud-point {
+    display: var(--displaygrid);
+    grid-template-columns: 24px minmax(0, var(--oneframe));
+    gap: var(--eighteenpixels);
+    align-items: var(--aligncenter);
+}
+
+.ensitech-cloud-point-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: var(--half);
+    display: var(--inlineflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    font-size: var(--twelvepixels);
+    line-height: var(--one);
+    color: rgba(243, 247, 252, 0.96);
+    background: linear-gradient(140deg, rgba(247, 161, 87, 0.92) 0%, rgba(237, 133, 58, 0.9) 100%);
+    box-shadow: 0 6px 14px rgba(17, 12, 10, 0.24);
+}
+
+.ensitech-cloud-point-copy {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    line-height: 1.55;
+    color: rgba(230, 238, 247, 0.9);
+}
+
+.ensitech-cloud-lottie-wrap {
+    width: var(--widthfull);
+    min-height: 640px;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+}
+
+#ensitechCloudLottie {
+    width: var(--widthfull);
+    height: 640px;
+}
+
+#ensitechCloudLottie svg {
+    transform: scale(1.32);
+    transform-origin: var(--aligncenter);
+}
+
+.ensitech-ai {
+    width: var(--widthfull);
+    position: var(--positionrelative);
+    padding: var(--paddingzero) var(--fortypixels);
+}
+
+.ensitech-ai-shell {
+    width: var(--widthfull);
+    max-width: 1120px;
+    margin: var(--marginzeroauto);
+    position: var(--positionrelative);
+}
+
+.ensitech-ai-section-title {
+    margin: 136px var(--marginzero) var(--thirtypixels) var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizepagetitle);
+    font-weight: var(--weightsemibold);
+    line-height: 1.1;
+    text-align: var(--aligncenter);
+    color: rgba(246, 249, 255, 0.96);
+    position: sticky;
+    top: 92px;
+    z-index: 20;
+    padding: var(--twentypixels) var(--paddingzero);
+    background: linear-gradient(180deg, rgba(10, 14, 24, 0.98) 0%, rgba(10, 14, 24, 0.9) 70%, rgba(10, 14, 24, 0) 100%);
+}
+
+.ensitech-ai-card {
+    min-height: 100vh;
+    position: sticky;
+    top: 198px;
+    display: var(--displayflex);
+    align-items: flex-start;
+    justify-content: var(--justifycenter);
+    padding: var(--zeropixels);
+}
+
+.ensitech-ai-card-inner {
+    width: var(--widthfull);
+    min-height: calc(100vh - 280px);
+    border-radius: 28px;
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.22);
+    background:
+        radial-gradient(95% 80% at 10% 10%, rgba(241, 147, 68, 0.18) 0%, rgba(241, 147, 68, 0) 64%),
+        linear-gradient(160deg, rgba(228, 238, 252, 0.13) 0%, rgba(213, 194, 213, 0.1) 100%);
+    box-shadow: 0 14px 34px rgba(7, 12, 22, 0.3), 0 0 0 1px rgba(142, 86, 113, 0.1);
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    text-align: var(--aligncenter);
+    position: var(--positionrelative);
+    overflow: var(--hidden);
+}
+
+.ensitech-ai-card-title {
+    margin: var(--marginzero) var(--marginzero) var(--twelvepixels) var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizepagetitle);
+    font-weight: var(--weightsemibold);
+    line-height: 1.1;
+    color: rgba(250, 252, 255, 0.98);
+}
+
+.ensitech-ai-card-label {
+    margin: var(--marginzero);
+    font-family: var(--fontfamily);
+    font-size: var(--textsizeparagraph);
+    font-weight: var(--weightregular);
+    line-height: 1.5;
+    color: rgba(230, 238, 247, 0.86);
+}
+
+.ensitech-ai-card-1 .ensitech-ai-card-inner {
+    justify-content: flex-end;
+    padding: var(--paddingzero) 72px var(--sixtypixels) 72px;
+    background-image: url("../images/Ensitech/ComprehensiveServices.jpg");
+    background-size: var(--cover);
+    background-position: var(--aligncenter);
+    background-repeat: var(--none);
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.48);
+}
+
+.ensitech-ai-card-1 .ensitech-ai-card-inner::after {
+    content: "";
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 22%,
+        rgba(0, 0, 0, 0.52) 58%,
+        rgba(0, 0, 0, 0.82) 80%,
+        rgba(0, 0, 0, 0.96) 100%
+    );
+    z-index: var(--one);
+    pointer-events: var(--none);
+}
+
+.ensitech-ai-card-1 .ensitech-ai-card-title,
+.ensitech-ai-card-2 .ensitech-ai-card-title,
+.ensitech-ai-card-3 .ensitech-ai-card-title,
+.ensitech-ai-card-4 .ensitech-ai-card-title,
+.ensitech-ai-card-5 .ensitech-ai-card-title {
+    position: var(--positionrelative);
+    z-index: 2;
+}
+
+.ensitech-ai-card-1 .ensitech-ai-card-label {
+    position: var(--positionrelative);
+    z-index: 2;
+    max-width: 42ch;
+    font-size: var(--textsizeparagraph);
+    line-height: 1.5;
+    font-weight: var(--weightregular);
+    color: rgba(250, 252, 255, 0.98);
+}
+
+.ensitech-ai-card-2 .ensitech-ai-card-inner {
+    justify-content: flex-end;
+    padding: var(--paddingzero) 72px var(--sixtypixels) 72px;
+    background-image: url("../images/Ensitech/DataIntegration.jpg");
+    background-size: var(--cover);
+    background-position: var(--aligncenter);
+    background-repeat: var(--none);
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.48);
+}
+
+.ensitech-ai-card-2 .ensitech-ai-card-inner::after {
+    content: "";
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 22%,
+        rgba(0, 0, 0, 0.52) 58%,
+        rgba(0, 0, 0, 0.82) 80%,
+        rgba(0, 0, 0, 0.96) 100%
+    );
+    z-index: var(--one);
+    pointer-events: var(--none);
+}
+
+.ensitech-ai-card-2 .ensitech-ai-card-label {
+    position: var(--positionrelative);
+    z-index: 2;
+    max-width: 42ch;
+    font-size: var(--textsizeparagraph);
+    line-height: 1.5;
+    font-weight: var(--weightregular);
+    color: rgba(250, 252, 255, 0.98);
+}
+
+.ensitech-ai-card-3 .ensitech-ai-card-inner {
+    justify-content: flex-end;
+    padding: var(--paddingzero) 72px var(--sixtypixels) 72px;
+    background-image: url("../images/Ensitech/PredictiveAnalytics.jpg");
+    background-size: var(--cover);
+    background-position: var(--aligncenter);
+    background-repeat: var(--none);
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.48);
+}
+
+.ensitech-ai-card-3 .ensitech-ai-card-inner::after {
+    content: "";
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 22%,
+        rgba(0, 0, 0, 0.52) 58%,
+        rgba(0, 0, 0, 0.82) 80%,
+        rgba(0, 0, 0, 0.96) 100%
+    );
+    z-index: var(--one);
+    pointer-events: var(--none);
+}
+
+.ensitech-ai-card-3 .ensitech-ai-card-label {
+    position: var(--positionrelative);
+    z-index: 2;
+    max-width: 42ch;
+    font-size: var(--textsizeparagraph);
+    line-height: 1.5;
+    font-weight: var(--weightregular);
+    color: rgba(250, 252, 255, 0.98);
+}
+
+.ensitech-ai-card-4 .ensitech-ai-card-inner {
+    justify-content: flex-end;
+    padding: var(--paddingzero) 72px var(--sixtypixels) 72px;
+    background-image: url("../images/Ensitech/languages.png");
+    background-size: var(--cover);
+    background-position: var(--aligncenter);
+    background-repeat: var(--none);
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.48);
+}
+
+.ensitech-ai-card-4 .ensitech-ai-card-inner::after {
+    content: "";
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 22%,
+        rgba(0, 0, 0, 0.52) 58%,
+        rgba(0, 0, 0, 0.82) 80%,
+        rgba(0, 0, 0, 0.96) 100%
+    );
+    z-index: var(--one);
+    pointer-events: var(--none);
+}
+
+.ensitech-ai-card-4 .ensitech-ai-card-label {
+    position: var(--positionrelative);
+    z-index: 2;
+    max-width: 42ch;
+    font-size: var(--textsizeparagraph);
+    line-height: 1.5;
+    font-weight: var(--weightregular);
+    color: rgba(250, 252, 255, 0.98);
+}
+
+.ensitech-ai-card-5 .ensitech-ai-card-inner {
+    justify-content: flex-end;
+    padding: var(--paddingzero) 72px var(--sixtypixels) 72px;
+    background-image: url("../images/Ensitech/mobileapps.jpeg");
+    background-size: var(--cover);
+    background-position: var(--aligncenter);
+    background-repeat: var(--none);
+    border: var(--onepixel) solid rgba(244, 248, 255, 0.48);
+}
+
+.ensitech-ai-card-5 .ensitech-ai-card-inner::after {
+    content: "";
+    position: var(--positionabsolute);
+    inset: var(--zero);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 22%,
+        rgba(0, 0, 0, 0.52) 58%,
+        rgba(0, 0, 0, 0.82) 80%,
+        rgba(0, 0, 0, 0.96) 100%
+    );
+    z-index: var(--one);
+    pointer-events: var(--none);
+}
+
+.ensitech-ai-card-5 .ensitech-ai-card-label {
+    position: var(--positionrelative);
+    z-index: 2;
+    max-width: 42ch;
+    font-size: var(--textsizeparagraph);
+    line-height: 1.5;
+    font-weight: var(--weightregular);
+    color: rgba(250, 252, 255, 0.98);
+}
+
+.ensitech-ai-card-1 { z-index: 1; }
+.ensitech-ai-card-2 { z-index: 2; }
+.ensitech-ai-card-3 { z-index: 3; }
+.ensitech-ai-card-4 { z-index: 4; }
+.ensitech-ai-card-5 { z-index: 5; }
+
 @media (max-width: 900px) {
+    .ensitech-hero {
+        min-height: 100vh;
+    }
+
     .ensitech-shell {
+        min-height: var(--auto);
+    }
+
+    .ensitech-staff {
+        min-height: var(--auto);
+        display: var(--displayblock);
         padding: 104px var(--twentypixels) var(--fortypixels);
     }
+
+    .ensitech-staff-title {
+        font-size: var(--textsizepagetitle);
+    }
+
+    .ensitech-staff-copy {
+        margin-top: var(--thirtypixels);
+        font-size: var(--textsizebodyregular);
+    }
+
+    .ensitech-staff-benefits {
+        margin-top: var(--fortypixels);
+        gap: var(--thirtypixels);
+    }
+
+    .ensitech-staff-benefits-row,
+    .ensitech-staff-benefits-row-top,
+    .ensitech-staff-benefits-row-bottom {
+        grid-template-columns: var(--oneframe);
+        gap: var(--thirtypixels);
+    }
+
+    .ensitech-benefit-icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    .ensitech-benefit-label {
+        margin-top: var(--sixteenpixels);
+        font-size: var(--textsizebodyregular);
+    }
+
+    .ensitech-software {
+        min-height: var(--auto);
+        display: var(--displayblock);
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .ensitech-software-layout {
+        grid-template-columns: var(--oneframe);
+        gap: var(--thirtypixels);
+    }
+
+    .ensitech-software-visual {
+        min-height: 320px;
+    }
+
+    .ensitech-software-image {
+        min-height: 320px;
+    }
+
+    .ensitech-software-title {
+        font-size: var(--textsizepagetitle);
+    }
+
+    .ensitech-software-points {
+        margin-top: var(--thirtypixels);
+        gap: var(--twentypixels);
+    }
+
+    .ensitech-software-point {
+        grid-template-columns: 22px minmax(0, var(--oneframe));
+        gap: var(--sixteenpixels);
+    }
+
+    .ensitech-software-point-icon {
+        width: 22px;
+        height: 22px;
+        font-size: 11px;
+    }
+
+    .ensitech-software-point-copy {
+        font-size: var(--textsizebodyregular);
+    }
+
+    .ensitech-cloud {
+        min-height: var(--auto);
+        display: var(--displayblock);
+        padding: 104px var(--twentypixels) var(--fortypixels);
+    }
+
+    .ensitech-cloud-title {
+        font-size: var(--textsizepagetitle);
+        text-align: var(--aligncenter);
+    }
+
+    .ensitech-cloud-layout {
+        grid-template-columns: var(--oneframe);
+        gap: var(--thirtypixels);
+    }
+
+    .ensitech-cloud-points {
+        margin-top: var(--thirtypixels);
+        gap: var(--twentypixels);
+    }
+
+    .ensitech-cloud-point {
+        grid-template-columns: 22px minmax(0, var(--oneframe));
+        gap: var(--sixteenpixels);
+    }
+
+    .ensitech-cloud-point-icon {
+        width: 22px;
+        height: 22px;
+        font-size: 11px;
+    }
+
+    .ensitech-cloud-point-copy {
+        font-size: var(--textsizebodyregular);
+    }
+
+    .ensitech-cloud-lottie-wrap {
+        min-height: 420px;
+    }
+
+    #ensitechCloudLottie {
+        height: 420px;
+    }
+
+    #ensitechCloudLottie svg {
+        transform: scale(1.2);
+    }
+
+    .ensitech-ai {
+        padding: var(--paddingzero) var(--twentypixels);
+    }
+
+    .ensitech-ai-section-title {
+        margin: 116px var(--marginzero) var(--twentypixels) var(--marginzero);
+        font-size: var(--textsizepagetitle);
+        top: 76px;
+        padding: var(--sixteenpixels) var(--paddingzero);
+    }
+
+    .ensitech-ai-card {
+        top: 164px;
+        padding: var(--paddingzero);
+    }
+
+    .ensitech-ai-card-inner {
+        min-height: calc(100vh - 230px);
+        border-radius: var(--twentypixels);
+    }
+
+    .ensitech-ai-card-label {
+        font-size: var(--textsizebodyregular);
+    }
+
+    .ensitech-ai-card-title {
+        font-size: var(--textsizeparagraph);
+        margin-bottom: var(--eightpixels);
+    }
+
+    .ensitech-ai-card-1 .ensitech-ai-card-inner {
+        padding: var(--paddingzero) var(--thirtypixels) var(--fortypixels) var(--thirtypixels);
+    }
+
+    .ensitech-ai-card-1 .ensitech-ai-card-label {
+        max-width: 100%;
+        font-size: var(--textsizebodyregular);
+    }
+
+    .ensitech-ai-card-2 .ensitech-ai-card-inner {
+        padding: var(--paddingzero) var(--thirtypixels) var(--fortypixels) var(--thirtypixels);
+    }
+
+    .ensitech-ai-card-2 .ensitech-ai-card-label {
+        max-width: 100%;
+        font-size: var(--textsizebodyregular);
+    }
+
+    .ensitech-ai-card-3 .ensitech-ai-card-inner {
+        padding: var(--paddingzero) var(--thirtypixels) var(--fortypixels) var(--thirtypixels);
+    }
+
+    .ensitech-ai-card-3 .ensitech-ai-card-label {
+        max-width: 100%;
+        font-size: var(--textsizebodyregular);
+    }
+
+    .ensitech-ai-card-4 .ensitech-ai-card-inner {
+        padding: var(--paddingzero) var(--thirtypixels) var(--fortypixels) var(--thirtypixels);
+    }
+
+    .ensitech-ai-card-4 .ensitech-ai-card-label {
+        max-width: 100%;
+        font-size: var(--textsizebodyregular);
+    }
+
+    .ensitech-ai-card-5 .ensitech-ai-card-inner {
+        padding: var(--paddingzero) var(--thirtypixels) var(--fortypixels) var(--thirtypixels);
+    }
+
+    .ensitech-ai-card-5 .ensitech-ai-card-label {
+        max-width: 100%;
+        font-size: var(--textsizebodyregular);
+    }
 }
+
+
+
+
+
