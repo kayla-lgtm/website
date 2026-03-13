@@ -1,7 +1,7 @@
 :root {
-    --association-card-background: rgba(255, 255, 255, 0.05);
-    --association-card-background-hover: rgba(255, 255, 255, 0.08);
-    --association-card-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    --association-card-background: rgba(255, 255, 255, 0.08);
+    --association-card-background-hover: rgba(255, 255, 255, 0.12);
+    --association-card-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
     --association-logo-height: 68px;
     --association-card-width: 220px;
     --association-card-radius: 22px;
@@ -13,12 +13,12 @@
     position: var(--positionrelative);
     width: var(--widthfull);
     overflow: var(--hidden);
-    background: var(--backgroundtransparent);
+    background: var(--background1);
 }
 
 .association-scroll-shell {
     width: var(--widthfull);
-    padding: var(--fortypixels) var(--eightypixels) var(--sixtypixels);
+    padding: var(--fortypixels) var(--eightypixels);
     display: var(--displayflex);
     flex-direction: var(--flexcolumn);
     gap: var(--twentyfourpixels);
@@ -76,7 +76,7 @@
     padding: var(--twentypixels) var(--twentyfourpixels);
     border-radius: var(--association-card-radius);
     background: var(--association-card-background);
-    border: var(--onepixel) solid rgba(255, 255, 255, 0.08);
+    border: var(--onepixel) solid rgba(255, 255, 255, 0.12);
     box-shadow: var(--association-card-shadow);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
