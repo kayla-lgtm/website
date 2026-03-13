@@ -1,0 +1,192 @@
+:root {
+    --association-section-background: rgba(6, 10, 18, 0.96);
+    --association-section-border: rgba(255, 255, 255, 0.08);
+    --association-card-background: rgba(255, 255, 255, 0.05);
+    --association-card-background-hover: rgba(255, 255, 255, 0.08);
+    --association-card-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    --association-logo-height: 68px;
+    --association-card-width: 220px;
+    --association-card-radius: 22px;
+    --association-marquee-gap: 28px;
+    --association-marquee-speed: 42s;
+}
+
+.association-scroll-section {
+    position: var(--positionrelative);
+    width: var(--widthfull);
+    overflow: var(--hidden);
+    background:
+        linear-gradient(180deg, rgba(8, 13, 25, 0.98) 0%, rgba(14, 20, 33, 0.95) 100%);
+    border-top: var(--onepixel) solid var(--association-section-border);
+    border-bottom: var(--onepixel) solid var(--association-section-border);
+}
+
+.association-scroll-shell {
+    width: var(--widthfull);
+    padding: var(--fiftypixels) var(--eightypixels);
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    gap: var(--thirtypixels);
+}
+
+.association-scroll-copy {
+    display: var(--displayflex);
+    flex-direction: var(--flexcolumn);
+    gap: var(--tenpixels);
+}
+
+.association-scroll-eyebrow {
+    margin: var(--marginzero);
+    color: rgba(255, 239, 208, 0.72);
+    font-size: var(--textsizetiny);
+    font-weight: var(--weightsemibold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.association-scroll-title {
+    margin: var(--marginzero);
+    color: var(--colorwhite);
+    font-size: var(--textsizesectiontitle);
+    font-weight: var(--weightsemibold);
+    line-height: 1.15;
+}
+
+.association-marquee {
+    position: var(--positionrelative);
+    width: var(--widthfull);
+    overflow: var(--hidden);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
+}
+
+.association-marquee-track {
+    width: max-content;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    gap: var(--association-marquee-gap);
+    animation: association-scroll var(--association-marquee-speed) linear infinite;
+    will-change: transform;
+}
+
+.association-marquee-group {
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    gap: var(--association-marquee-gap);
+    flex-shrink: var(--zero);
+}
+
+.association-logo-card {
+    width: var(--association-card-width);
+    min-width: var(--association-card-width);
+    height: 124px;
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    padding: var(--twentypixels) var(--twentyfourpixels);
+    border-radius: var(--association-card-radius);
+    background: var(--association-card-background);
+    border: var(--onepixel) solid rgba(255, 255, 255, 0.08);
+    box-shadow: var(--association-card-shadow);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    flex-shrink: var(--zero);
+    transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.association-logo-card:hover {
+    transform: translateY(-2px);
+    background: var(--association-card-background-hover);
+    border-color: rgba(255, 239, 208, 0.22);
+}
+
+.association-logo-card img {
+    display: var(--displayblock);
+    height: var(--association-logo-height);
+    width: var(--auto);
+    max-width: var(--widthfull);
+    object-fit: var(--contain);
+    object-position: var(--aligncenter);
+}
+
+.association-logo-placeholder {
+    display: var(--displayflex);
+    align-items: var(--aligncenter);
+    justify-content: var(--justifycenter);
+    width: var(--widthfull);
+    height: var(--association-logo-height);
+    border: var(--onepixel) dashed rgba(255, 239, 208, 0.28);
+    border-radius: var(--sixteenpixels);
+    color: rgba(255, 255, 255, 0.78);
+    font-size: var(--textsizebodyregular);
+    font-weight: var(--weightmedium);
+    text-align: var(--aligncenter);
+    padding: 0 var(--twelvepixels);
+}
+
+.association-marquee:hover .association-marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes association-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-50% - (var(--association-marquee-gap) / 2)));
+    }
+}
+
+@media (max-width: 900px) {
+    .association-scroll-shell {
+        padding: var(--fortypixels) var(--twentypixels);
+    }
+
+    .association-logo-card {
+        width: 190px;
+        min-width: 190px;
+        height: 112px;
+        padding: var(--eighteenpixels) var(--twentypixels);
+    }
+
+    .association-logo-placeholder,
+    .association-logo-card img {
+        height: 56px;
+    }
+}
+
+@media (max-width: 640px) {
+    .association-scroll-shell {
+        padding: var(--thirtypixels) var(--sixteenpixels);
+        gap: var(--twentypixels);
+    }
+
+    .association-scroll-title {
+        font-size: var(--twentypixels);
+    }
+
+    .association-logo-card {
+        width: 160px;
+        min-width: 160px;
+        height: 96px;
+        border-radius: var(--eighteenpixels);
+        padding: var(--sixteenpixels);
+    }
+
+    .association-marquee-track,
+    .association-marquee-group {
+        gap: var(--twentypixels);
+    }
+
+    .association-logo-placeholder,
+    .association-logo-card img {
+        height: 48px;
+        font-size: var(--textsizetiny);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .association-marquee-track {
+        animation: none;
+    }
+}
